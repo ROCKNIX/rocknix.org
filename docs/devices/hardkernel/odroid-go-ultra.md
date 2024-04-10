@@ -23,7 +23,7 @@
 {%include 'controls/retroarch.md' %}
 {%set btn_prefix = 'F1' %}
 {%include 'controls/aethersx2.md' %}
-{%include 'controls/citra.md' %}
+{%include 'controls/lime3ds.md' %}
 {%set btn_save = 'R2' %}
 {%set btn_load = 'L2' %}
 {%set btn_menu = 'F1' %}

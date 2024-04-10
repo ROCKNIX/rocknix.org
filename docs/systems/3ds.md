@@ -10,13 +10,12 @@
 
 | Name | Platform | Documentation |
 | --- | --- | --- |
-| Citra | AMD64 | [docs.libretro.com/library/citra](https://docs.libretro.com/library/citra/) |
-| Citra (SA) | AMD64, S922X | [citra-emu.org](https://citra-emu.org/) |
+| Lime3DS (SA) | S922X | [https://github.com/Lime3DS/Lime3DS](https://github.com/Lime3DS/Lime3DS) |
 
 ## AES Keys
 
-> You need crypto keys to play encrypted roms, for details see [https://citra-emu.org/wiki/aes-keys/](https://citra-emu.org/wiki/aes-keys/).
+> You need crypto keys to play encrypted roms.
 
 | Emulator | Required Files | Path |
 | --- | --- | --- |
-| Citra (SA) | `aes_keys.txt` | `/storage/.config/citra-emu/sysdata` |
+| Citra (SA) | `aes_keys.txt` | `/storage/.config/lime3ds/sysdata` |

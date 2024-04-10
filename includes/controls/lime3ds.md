@@ -1,4 +1,4 @@
-### Citra ([Nintendo 3DS](../../../systems/3ds))
+### Lime3DS ([Nintendo 3DS](../../../systems/3ds))
 
 | Button Combo | Action |
 | -- | -- |
