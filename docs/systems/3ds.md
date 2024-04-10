@@ -18,4 +18,4 @@
 
 | Emulator | Required Files | Path |
 | --- | --- | --- |
-| Citra (SA) | `aes_keys.txt` | `/storage/.config/lime3ds/sysdata` |
+| Lime3DS (SA) | `aes_keys.txt` | `/storage/.config/lime3ds/sysdata` |
