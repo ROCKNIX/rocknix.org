@@ -92,6 +92,7 @@ nav:
       - Overlays: configure/overlays.md
       #- Bluetooth: configure/bluetooth.md
       - Networking: configure/networking.md
+      - HDMI: configure/hdmi.md
       - Cloud Sync: configure/cloud-sync.md
       - VPN: configure/vpn.md
       - Packages: configure/packages.md
