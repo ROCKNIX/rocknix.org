@@ -20,5 +20,5 @@ If you device does not have access to the internet you can still update manually
 	* You'll find download links for each device/platform we support under the "`Update Package Downloads`" header.
     * Make sure to download the correct .tar file for your device.  For example; if you are installing ROCKNIX on a [Gameforce Ace](../devices/gameforce/gameforce-ace.md) you would download the `ROCKNIX-RK3588` file.
     * If you have any questions you can check the [Device Support](../devices/index.md) section to confirm which .tar you should download for your specific device.
-2. Copy the update to your device's update share.
-3. Reboot the device, and the update will begin automatically.
+2. Copy the update to the `/.update` folder located in the `STORAGE` partition of the OS SD card
+4. Reboot the device, and the update will begin automatically.
