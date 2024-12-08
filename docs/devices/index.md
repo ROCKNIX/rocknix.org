@@ -12,6 +12,14 @@ We provide builds for the following devices:
   * [Anbernic RG503](anbernic/rg503)
   * [Anbernic RG552](anbernic/rg552)
   * [Anbernic RG ARC](anbernic/rgarc)
+  * [Anbernic RG35XX Plus](anbernic/rg35xx-plus)
+  * [Anbernic RG35XX 2024](anbernic/rg35xx-2024)
+  * [Anbernic RG35XX H](anbernic/rg35xx-h)
+  * [Anbernic RG35XX SP](anbernic/rg35xx-sp)
+  * [Anbernic RG28XX](anbernic/rg28xx)
+  * [Anbernic RG40XX V](anbernic/rg40xx-v)
+  * [Anbernic RG40XX H](anbernic/rg40xx-h)
+  * [Anbernic RG CubeXX](anbernic/rg-cubexx)
 * GameForce
   * [GameForce Ace](gameforce/gameforce-ace) 
 * Hardkernel
