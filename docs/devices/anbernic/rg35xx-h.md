@@ -41,6 +41,8 @@
 
 ### Installation
 
+!!! note "The H700 release of ROCKNIX is not yet available."
+
 Download the latest `H700` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
 Important, before booting the device, edit the file `extlinux/extlinux.conf` and change the line `  FDT /sun50i-h700-anbernic-rg35xx-plus` to `  FDT /sun50i-h700-anbernic-rg35xx-h.dtb`.

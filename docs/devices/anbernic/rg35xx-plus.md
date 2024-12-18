@@ -41,6 +41,8 @@
 
 ### Installation
 
+!!! note "The H700 release of ROCKNIX is not yet available."
+
 Download the latest `H700` version of ROCKNIX from the button below and follow the instructions listed on the [Install](../../../play/install/) page.
 
 If the display doesn't seems to works (flickering, noise, etc...), you may have a version with a new display, in that case use `  FDT /sun50i-h700-anbernic-rg35xx-plus-rev6-panel.dtb`
