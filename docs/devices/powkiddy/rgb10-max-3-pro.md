@@ -37,7 +37,7 @@
 {%include 'controls/hypseus-singe.md' %}
 {%include 'controls/openbor.md' %}
 {%include 'controls/vice.md' %}
-{%set btn_hotkey_b = 'F2' %}
+{%set btn_hotkey_b = 'Start' %}
 {%include 'controls/extra.md' %}
 
 ## Notes
