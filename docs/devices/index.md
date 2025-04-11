@@ -45,6 +45,7 @@ We provide builds for the following devices:
   * [RGB20SX](powkiddy/rgb20sx)
   * [RGB30](powkiddy/rgb30)
   * [X35S](powkiddy/x35s)
+  * [X35H](powkiddy/x35h)
   * [X55](powkiddy/x55)
   * [XU10](powkiddy/xu10)
 * Retroid
