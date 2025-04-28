@@ -18,6 +18,7 @@
 
 {%include 'controls/retroarch.md' %}
 {%include 'controls/mednafen.md' %}
+{%include 'controls/duckstation.md' %}
 {%include 'controls/extra.md' %}
 
 ## Emulators

@@ -41,6 +41,7 @@
 
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/hypseus-singe.md' %}
+{%include 'controls/duckstation.md' %}
 {%include 'controls/extra.md' %}
 
 ## Notes

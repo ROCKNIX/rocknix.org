@@ -37,6 +37,7 @@
 {%include 'controls/hypseus-singe.md' %}
 {%include 'controls/openbor.md' %}
 {%include 'controls/vice.md' %}
+{%include 'controls/duckstation.md' %}
 {%set btn_hotkey_b = 'F2' %}
 {%include 'controls/extra.md' %}
 
