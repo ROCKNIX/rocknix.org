@@ -5,5 +5,7 @@
 
 | Button Combo | Action |
 | -- | -- |
+| ++"{{ btn_hotkey_a }}"+"L2"++ | Toggle Layout |
+| ++"{{ btn_hotkey_a }}"+"R2"++ | Swap Screens |
 | ++"{{ btn_hotkey_a }}"+"START"++ | Quit Game |
 
