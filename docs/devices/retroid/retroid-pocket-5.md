@@ -39,6 +39,7 @@ search:
 {%include 'controls/dolphin.md' %}
 {%include 'controls/aethersx2.md' %}
 {%include 'controls/xemu.md' %}
+{%include 'controls/duckstation.md' %}
 
 ## Additional References
 

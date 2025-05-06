@@ -31,7 +31,7 @@ search:
 {%include 'controls/mednafen.md' %}
 {%include 'controls/mupen64plus.md' %}
 {%include 'controls/ppsspp.md' %}
-
+{%include 'controls/duckstation.md' %}
 {%include 'controls/extra.md' %}
 
 ## Additional References
