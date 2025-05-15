@@ -34,6 +34,7 @@
 {%set btn_menu = 'L3' %}
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/hypseus-singe.md' %}
+{%include 'controls/duckstation.md' %}
 {%include 'controls/extra.md' %}
 
 ## Emulators

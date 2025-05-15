@@ -21,6 +21,7 @@
 {% set btn_hotkey_a = '-(MINUS)' %}
 {% set btn_hotkey_b = '\+(PLUS)' %}
 {%include 'controls/mednafen.md' %}
+{%include 'controls/duckstation.md' %}
 
 ## Emulators
 

@@ -19,6 +19,7 @@
 {%set btn_east = 'A(EAST)' %}
 
 {%include 'controls/retroarch.md' %}
+{%include 'controls/duckstation.md' %}
 
 ## Emulators
 
