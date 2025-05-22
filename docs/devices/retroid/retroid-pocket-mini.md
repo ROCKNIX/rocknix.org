@@ -47,36 +47,37 @@ search:
 
 - [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
-### Screen issue
-!!! note "If you have screen issues, you likely didn't choose a proper entry during boot"
-    ![](../../_inc/images/devices/retroid-pocket-mini-inverted.png){ .off-glb }
-    To fix broken image you need to:
-
-     * flash a working loader (seen next section about Bootloader, GRUB and fastboot)
-     * on boot, select a boot entry which corresponds to your device
-
 ### Retroid Pocket Mini V2
 
 !!! note "Retroid's Android OTA for the Pocket Mini V2 Breaks Bootloader Visibility"
     The latest OTA update from Retroid for the Pocket Mini V2 includes a faulty bootloader. 
     As a result, the GRUB boot selection screen is no longer visible at startup.
 
+    This may result in you booting with the wrong device selection. If your screen
+    looks like the following then follow the steps below.
+
+    ![](../../_inc/images/devices/retroid-pocket-mini-inverted.png){ .off-glb }
+
     #### How to Fix It
     You’ll need to manually reflash the **loader partition** using **fastboot**.
 
-    #### Step 1: Install Fastboot Tools
-    [15-Second ADB/Fastboot Installer](https://xdaforums.com/t/official-tool-windows-adb-fastboot-and-drivers-15-seconds-adb-installer-v1-4-3.2588979/)
+    #### Step 1: Download and extract Android SDK Platform Tools
+    [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools#downloads)
 
-    #### Step 2: Download the Fixed Bootloader
+    #### Step 2: Download the Fixed Bootloader to the SDK Platform Tools folder
     [Download u-boot-sm8250-retroidpocket-rpminiv2.img](https://github.com/RetroidPocket/u-boot/releases/download/rp-v1.0.1/u-boot-sm8250-retroidpocket-rpminiv2.img)
 
-    #### Step 3: Enter Fastboot Mode
+    #### Step 3: Enter ABL / Fastboot mode
     Hold **Volume Down** while powering on the device.
 
     #### Step 4: Flash the Loader Partition
+    Open a cmd prompt and `cd` to the directory you extracted the Android SDK platform tools,
+    and type the following command.
     ```
     fastboot flash loader u-boot-sm8250-retroidpocket-rpminiv2.img
     ```
+
+    #### Step 5: Boot up and select "Retroid Pocket Mini V2" from the GRUB screen.
 
 ### Community Videos
 
