@@ -47,6 +47,14 @@ search:
 
 - [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
+### Screen issue
+!!! note "If you have screen issues, you likely didn't choose a proper entry during boot"
+    ![](../../_inc/images/devices/retroid-pocket-mini-inverted.png){ .off-glb }
+    To fix broken image you need to:
+
+     * flash a working loader (seen next section about Bootloader, GRUB and fastboot)
+     * on boot, select a boot entry which corresponds to your device
+
 ### Retroid Pocket Mini V2
 
 !!! note "Retroid's Android OTA for the Pocket Mini V2 Breaks Bootloader Visibility"
