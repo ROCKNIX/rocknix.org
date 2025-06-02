@@ -29,12 +29,8 @@ We provide builds for the following devices:
   * [Odroid Go Advance](hardkernel/odroid-go-advance)
   * [Odroid Go Super](hardkernel/odroid-go-super)
   * [Odroid Go Ultra](hardkernel/odroid-go-ultra)
-* Indiedroid
-  * [Nova](indiedroid/nova)
 * MagicX 
   * [XU Mini M](magicx/xu-mini-m)
-* Orange Pi
-  * [Orange Pi 5](orange-pi/orange-pi-5)
 * Powkiddy
   * [RGB10](powkiddy/rgb10)
   * [RGB10 Max 3 Pro](powkiddy/rgb10-max-3-pro)
