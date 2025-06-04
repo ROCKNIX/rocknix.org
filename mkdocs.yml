@@ -220,7 +220,7 @@ nav:
         - RG40XX H: devices/anbernic/rg40xx-h.md
         - RG CubeXX: devices/anbernic/rg-cubexx.md
         - RG34XX: devices/anbernic/rg34xx.md
-        - RG34XX-SP: devices/anbernic/rg34xx-sp.md
+        - RG34XX SP: devices/anbernic/rg34xx-sp.md
       - Ayn:
         - Ayn Odin 2: devices/ayn/odin2.md
         - Ayn Odin 2 Mini: devices/ayn/odin2mini.md
