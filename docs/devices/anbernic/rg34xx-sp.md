@@ -1,4 +1,4 @@
-# Anbernic RG34XX
+# Anbernic RG34XX SP
 
 ![](../../_inc/images/devices/anbernic-rg34xx-sp.png){ .off-glb }
 
