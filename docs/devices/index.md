@@ -38,6 +38,7 @@ We provide builds for the following devices:
   * [RGB10X](powkiddy/rgb10x)
   * [RK2023](powkiddy/rk2023)
   * [RGB20SX](powkiddy/rgb20sx)
+  * [RGB20 Pro](powkiddy/rgb20-pro)
   * [RGB30](powkiddy/rgb30)
   * [X35S](powkiddy/x35s)
   * [X35H](powkiddy/x35h)

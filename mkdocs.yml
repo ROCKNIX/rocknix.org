@@ -240,6 +240,7 @@ nav:
         - RGB10X: devices/powkiddy/rgb10x.md
         - RK2023: devices/powkiddy/rk2023.md
         - RGB20SX: devices/powkiddy/rgb20sx.md
+        - RGB20 Pro: devices/powkiddy/rgb20-pro.md
         - RGB30: devices/powkiddy/rgb30.md
         - X35S: devices/powkiddy/x35s.md
         - X35H: devices/powkiddy/x35h.md
