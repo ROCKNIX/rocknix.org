@@ -33,7 +33,6 @@ search:
 {%include 'controls/ppsspp.md' %}
 {%include 'controls/duckstation.md' %}
 {%include 'controls/extra.md' %}
-{%include 'controls/lime3ds.md' %}
 {%include 'controls/azahar.md' %}
 
 ## Additional References

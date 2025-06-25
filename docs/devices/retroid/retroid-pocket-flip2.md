@@ -39,7 +39,6 @@ search:
 {%include 'controls/dolphin.md' %}
 {%include 'controls/aethersx2.md' %}
 {%include 'controls/xemu.md' %}
-{%include 'controls/lime3ds.md' %}
 {%include 'controls/azahar.md' %}
 
 ## Additional References
