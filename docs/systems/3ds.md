@@ -8,9 +8,9 @@
 
 ## Emulator/Core
 
-| Name | Platform | Documentation |
-| --- | --- | --- |
-| Lime3DS (SA) | S922X | [https://github.com/Lime3DS/Lime3DS](https://github.com/Lime3DS/Lime3DS) |
+| Name | Documentation |
+| --- | --- |
+| Azahar (SA) | [https://github.com/AzaharPlus/AzaharPlus](https://github.com/AzaharPlus/AzaharPlus) |
 
 ## AES Keys
 
@@ -18,4 +18,4 @@
 
 | Emulator | Required Files | Path |
 | --- | --- | --- |
-| Lime3DS (SA) | `aes_keys.txt` | `/storage/.config/lime3ds/sysdata` |
+| Azahar (SA) | `aes_keys.txt` | `/storage/.config/azahar/sysdata` |
