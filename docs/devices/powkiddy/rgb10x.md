@@ -11,17 +11,23 @@
 
 ## Controls
 
-{%set btn_north = 'Y(NORTH)' %}
-{%set btn_west = 'X(WEST)' %}
-{%set btn_south = 'A(SOUTH)' %}
-{%set btn_east = 'B(EAST)' %}
+{%set btn_north = 'X(NORTH)' %}
+{%set btn_west = 'Y(WEST)' %}
+{%set btn_south = 'B(SOUTH)' %}
+{%set btn_east = 'A(EAST)' %}
 
 {%include 'controls/retroarch.md' %}
 
 {% set btn_hotkey_a = '-(MINUS)' %}
 {% set btn_hotkey_b = '\+(PLUS)' %}
-{%include 'controls/mednafen.md' %}
 {%include 'controls/duckstation.md' %}
+{%include 'controls/mednafen.md' %}
+
+{%set btn_c_up = 'X(NORTH)' %}
+{%set btn_c_down = 'unmapped' %}
+{%set btn_c_left = 'unmapped' %}
+{%set btn_c_right = 'A(EAST)' %}
+{%include 'controls/mupen64plus.md' %}
 
 ## Emulators
 
