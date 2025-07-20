@@ -1,8 +1,9 @@
 site_name: ROCKNIX Wiki
+site_description: The Official ROCKNIX Wiki
 site_url: https://rocknix.org
 repo_url: https://github.com/ROCKNIX/distribution
-repo_name: GitHub
-copyright: Copyright Creative Commons Attribution-ShareAlike 4.0 International
+repo_name: ROCKNIX GitHub
+copyright: Copyright &copy; 2025 ROCKNIX Team
 theme:
   language: en
   name: material
@@ -59,8 +60,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ROCKNIX/distribution
+      name: ROCKNIX GitHub
     - icon: fontawesome/brands/discord
       link: https://discord.gg/seTxckZjJy
+      name: ROCKNIX Discord
 plugins:
   - search
   - glightbox
