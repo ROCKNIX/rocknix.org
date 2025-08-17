@@ -79,6 +79,7 @@ nav:
       - Build: contribute/build.md
       - Modify: contribute/modify.md
       - Quirks: contribute/quirks.md
+      - Packages: contribute/packages.md
     - Play:
       - Install: play/install.md
       - Update: play/update.md
