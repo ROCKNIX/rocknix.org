@@ -9,24 +9,30 @@ search:
 
 ## Overview
 
-| Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
-| -- | -- | -- | -- | -- | -- |
-| Ayn Odin 2 (Base / Pro / Max) | Qualcomm 8gen2 (SM8550) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
+| Device                        | CPU / Architecture      | Kernel         | GL driver | Vulkan driver | Interface                |
+| ----------------------------- | ----------------------- | -------------- | --------- | ------------- | ------------------------ |
+| Ayn Odin 2 (Base / Pro / Max) | Qualcomm 8gen2 (SM8550) | Mainline Linux | Freedreno | Turnip        | Sway + Emulation Station |
 
 ## Features
 
-| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
-| -- | -- |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
-| :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
-| :material-fan: Fan | Can be set globally, per system or per game. |
-| :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
-| :material-vibrate: Rumble | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
+| Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes                                                                                                   |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| :material-wifi: Wifi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                |
+| :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                |
+| :material-fan: Fan                                                                                      | Can be set globally, per system or per game.                                                            |
+| :material-lightbulb-on: Joystick LEDS                                                                   | Supports selecting from a set of colors, battery level status, <br> or turning the joystick LEDS off.   |
+| :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 
-## Flashing LinuxLoader ABL
+## Ayn Boot Selection for Linux
 
-- [You must flash the Linux Loader ABL before you can boot ROCKNIX on the Odin 2.](https://renegade-project.tech/en/ayn-odin2/linuxloader) 
-- [Alternative mirror: Extract the odin2_custom_abl folder to the root of Android internal storage. Then use Odin settings -> Run script as Root to run the backup_and_flash.sh script.](https://github.com/ROCKNIX/packages/raw/refs/heads/main/odin2_custom_abl_20250311.7z)
+**Requires Ayn Odin 2 Firmware `v1.0.0.355` or newer** which adds support for Linux boot selection.
+
+1. Power off the Odin 2 and insert your SD Card with ROCKNIX flashed on it
+2. While holding down the VOL- button, press the power button and hold both buttons until you see the Ayn Log
+3. The device should show the FastBoot Menu
+4. Use the volume button to navigate the menu and change the `BOOT MODE` to `Loader`
+5. Press power key to select `START`
+6. Device will then boot into ROCKNIX off the SD Card
 
 ## Controls
 
