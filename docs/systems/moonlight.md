@@ -24,6 +24,7 @@ After pairing was successful, select "UPDATE MOONLIGHT GAMES" option. This shoul
 Browse to the Moonlight system in Emulation Station. Press ++"Select"++ and choose "Advanced System Options" to customise the controller layout for all Moonlight games. Press ++"X (North)"++ and choose "Advanced Game Options" to customise the controller layout for an individual game.
 
 Layout options:
+
 * Nintendo (default)
 * Xbox
 * Xbox - swap shoulders / triggers (can be useful for devices with inline shoulder / trigger buttons)
