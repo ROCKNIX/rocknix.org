@@ -20,6 +20,14 @@ The setup requires pairing with your local PC running Moonlight and then populat
 
 After pairing was successful, select "UPDATE MOONLIGHT GAMES" option. This should query the server for the list of all games and populate Moonlight Streaming system in Emulation Station.
 
+### Controller Layout
+Browse to the Moonlight system in Emulation Station. Press ++"Select"++ and choose "Advanced System Options" to customise the controller layout for all Moonlight games. Press ++"X (North)"++ and choose "Advanced Game Options" to customise the controller layout for an individual game.
+
+Layout options:
+* Nintendo (default)
+* Xbox
+* Xbox - swap shoulders / triggers (can be useful for devices with inline shoulder / trigger buttons)
+
 ## Step 3: Play
 Browse to the Moonlight system in Emulation Station. Select the game you want to play. The game should start and you should be able to interact with it.
 
@@ -27,3 +35,6 @@ Browse to the Moonlight system in Emulation Station. Select the game you want to
 * The easiest option is to add your device to your [Tailscale](../../configure/vpn/#tailscale) network with your local PC.
 * Moonlight allows to open several ports to connect to the local PC to stream over the internet. Setup might be somewhat complicated.
 * Another option is to use [WireGuard](../../configure/vpn/#wireguard) to setup the connection with the device. This approach requires only a single open port, but it requires WireGuard server to be running on your local network.
+
+## Step 4: Exiting
+Press ++"L1"++ + ++"L2"++ + ++"Select"++ + ++"Start"++ to stop streaming.
