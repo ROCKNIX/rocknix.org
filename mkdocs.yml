@@ -196,6 +196,7 @@ nav:
         - Doom: systems/doom.md
         - CHIP-8 / S-CHIP / XO-CHIP: systems/chip-8.md
         - EasyRPG: systems/easyrpg.md
+        - idtech: systems/idtech.md
         - Infocom Zmachine: systems/zmachine.md
         - J2ME: systems/j2me.md
         - Open Beats of Rage: systems/openbor.md
