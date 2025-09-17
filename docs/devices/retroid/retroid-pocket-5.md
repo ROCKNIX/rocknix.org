@@ -45,9 +45,9 @@ search:
 {%include 'controls/azahar.md' %}
 
 ## Dual Screen
-These commands will configure the Dual Screen, you will need to login to your device using SSH.
+These commands will configure the Dual Screen, you will need to login to your device using SSH to run them.
 
-You will need to toggle "Enable SSH" option by pressing ++"START"++ to going to ```Network Settings```.  Also make sure that "Enable Wifi" is also toggled and your device is connected to your network. The IP address of your device can be found at the top of the ```Network Settings``` menu
+You will need to toggle the "Enable SSH" option by pressing ++"START"++ and going to ```Network Settings```. Also make sure that "Enable Wifi" is also toggled and your device is connected to your network. The IP address of your device can be found at the top of the ```Network Settings``` menu
 
 To configure screen orientation and resolution
 ```bash
