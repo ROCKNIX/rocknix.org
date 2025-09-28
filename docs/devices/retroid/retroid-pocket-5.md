@@ -57,14 +57,14 @@ swaymsg output DP-1 allow_tearing yes
 swaymsg output DP-1 max_render_time off
 swaymsg output DP-1 scale 2
 swaymsg output DP-1 position 0 0
-systemctl restart sway.service
+systemctl restart essway.service
 ```
 
 To mirror the dual screen on the main screen, run these commands in addition to the ones above
 ```bash
 swaymsg output DSI-1 scale 2
 swaymsg output DSI-1 position 0 0
-systemctl restart sway.service
+systemctl restart essway.service
 ```
 
 For the touch screen
