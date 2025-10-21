@@ -13,6 +13,7 @@ We provide builds for the following devices:
   * [Anbernic RG552](anbernic/rg552)
   * [Anbernic RG ARC](anbernic/rgarc)
   * [Anbernic RG35XX Plus](anbernic/rg35xx-plus)
+  * [Anbernic RG35XX Pro](anbernic/rg35xx-pro)
   * [Anbernic RG35XX 2024](anbernic/rg35xx-2024)
   * [Anbernic RG35XX H](anbernic/rg35xx-h)
   * [Anbernic RG35XX SP](anbernic/rg35xx-sp)

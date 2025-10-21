@@ -24,6 +24,7 @@ Here is the name of the files to use.
 |RG35XX H rev6|`sun50i-h700-anbernic-rg35xx-h-rev6-panel.dtb`|
 |RG35XX Plus|`sun50i-h700-anbernic-rg35xx-plus.dtb`|
 |RG35XX Plus rev6|`sun50i-h700-anbernic-rg35xx-plus-rev6-panel.dtb`|
+|RG35XX Pro|`sun50i-h700-anbernic-rg35xx-pro.dtb`|
 |RG35XX SP|`sun50i-h700-anbernic-rg35xx-sp.dtb`|
 |RG35XX SP v2|`sun50i-h700-anbernic-rg35xx-sp-v2-panel.dtb`|
 |RG40XX H|`sun50i-h700-anbernic-rg40xx-h.dtb`|
