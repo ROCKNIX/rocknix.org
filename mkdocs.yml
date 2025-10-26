@@ -91,7 +91,6 @@ nav:
       - Themes: configure/themes.md
       - Scraping: configure/scraper.md
       - Collections: configure/collections.md
-      - Optimizations: configure/optimizations.md
       - Shaders: configure/shaders.md
       - Overlays: configure/overlays.md
       #- Bluetooth: configure/bluetooth.md
