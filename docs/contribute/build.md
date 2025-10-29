@@ -1,4 +1,4 @@
-# :octicons-stack-16: Building ROCKNIX
+# :octicons-stack-16: Building ROCKNIX locally
 
 ROCKNIX is a fairly unique distribution as it is *built to order* and only enough of the operating system and applications are built for the purpose of booting and executing emulators and ports.  Developers and others who would like to contribute to our project should read and agree to the [Contributor Code of Conduct](code-of-conduct.md) and [Contributing to ROCKNIX](index.md) guides before submitting your first contribution.
 
