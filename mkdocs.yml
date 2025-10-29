@@ -76,7 +76,9 @@ nav:
     - Contribute:
       - contribute/index.md
       - Code of Conduct: contribute/code-of-conduct.md
-      - Build: contribute/build.md
+      - Build:
+          - Build locally: contribute/build.md
+          - Build using GH runners: contribute/build-gh.md
       - Modify: contribute/modify.md
       - Quirks: contribute/quirks.md
       - Packages: contribute/packages.md
