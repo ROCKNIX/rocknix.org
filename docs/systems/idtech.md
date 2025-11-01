@@ -53,8 +53,6 @@ Run `Tools` -> `Scan id Tech Files` to create launch scripts, then restart Emula
 
 ## PS
 
-Some times ecwolf core need to be upgrades thro RA menu, run `Tools` -> `RetroArch` and update core.
-
 Doom3 and Quake3 only for x86-64 system.
 
 Doom, Sigil, Sigil2 come from internet and be preinstalled after running scan.
