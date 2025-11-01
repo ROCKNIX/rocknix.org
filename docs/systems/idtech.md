@@ -16,16 +16,22 @@ Put your game files in the relevant folder in this structure:
 │   ├── sigil2
 │   ├── tnt
 │   └── udoom
+├── doom3
+│   ├── base
+│   ├── d3xp
 ├── quake
 │   ├── dopa
 │   ├── hipnotic
 │   ├── id1
 │   └── rogue
+│   ├── malice
 ├── quake2
 │   ├── baseq2
 │   ├── rogue
 │   ├── xatrix
 │   └── zaero
+├── quake3
+│   ├── baseq3
 └── wolf3d
     ├── sod
     └── wolf3d
@@ -44,3 +50,10 @@ Run `Tools` -> `Scan id Tech Files` to create launch scripts, then restart Emula
 | tyrquake | [docs.libretro.com/library/tyrquake](https://docs.libretro.com/library/tyrquake) |
 | vitaquake2<br/>vitaquake2-xatrix<br/>vitaquake2-rogue<br/>vitaquake2-zaero | None available |
 | ecwolf | [docs.libretro.com/library/ecwolf](https://docs.libretro.com/library/ecwolf) |
+
+## PS
+
+Doom3 and Quake3 only for x86-64 system.
+
+Doom, Sigil, Sigil2 come from internet and be preinstalled after running scan.
+
