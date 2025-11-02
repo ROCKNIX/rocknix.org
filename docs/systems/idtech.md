@@ -51,9 +51,11 @@ Run `Tools` -> `Scan id Tech Files` to create launch scripts, then restart Emula
 | vitaquake2<br/>vitaquake2-xatrix<br/>vitaquake2-rogue<br/>vitaquake2-zaero | None available |
 | ecwolf | [docs.libretro.com/library/ecwolf](https://docs.libretro.com/library/ecwolf) |
 
-## PS
+## P.S.
 
 Doom3 and Quake3 only for x86-64 system.
 
-Doom, Sigil, Sigil2 come from internet and be preinstalled after running scan.
+Doom come from internet and be preinstalled after running scan.
+
+Sigil, Sigil2 you can get from official site John Romero [https://romero.com/sigil](https://romero.com/sigil)
 
