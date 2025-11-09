@@ -10,17 +10,19 @@
 
 ROCKNIX is an immutable Linux distribution for handheld gaming devices focused on retro gaming emulation.  It is developed by a small community of enthusiasts and our goal is to produce an operating system that has the features and capabilities we need and to have fun as we develop it.
 
-## Features
+ROCKNIX offers a plug-and-play experience designed for performance, stability, and fun, built by gamers, for gamers.
 
-- Integrated cross-device local and remote network play.
-- In-game touch support on supported devices.
-- Fine grain control for battery life or performance.
-- Includes support for playing Music and Video.
-- Bluetooth audio and controller support.
-- Support for HDMI audio and video out, and USB audio.
-- Device to device and device to cloud sync with Syncthing and rclone.
-- VPN support with Wireguard, Tailscale, and ZeroTier.
-- Includes built-in support for scraping and retroachievements.
+## :material-star: Features
+
+- :material-gamepad-variant:  **Local and remote multiplayer support**
+- :material-gesture-tap-button:  **In-game touch controls** for supported devices
+- :material-flash:  **Custom performance and power profiles** for optimal balance
+- :material-music-note:  **Integrated music and video playback**
+- :material-bluetooth:  **Bluetooth audio and controller connectivity**
+- :material-monitor:  **HDMI and USB output** for audio and video
+- :material-sync:  **Cloud and LAN synchronization** via Syncthing and rclone
+- :material-vpn:  **Built-in VPN support** with WireGuard, Tailscale, and ZeroTier
+- :material-trophy:  **RetroAchievements and automatic game scraping**
 
 ## Preview
 
@@ -37,7 +39,7 @@ ROCKNIX is an immutable Linux distribution for handheld gaming devices focused o
 
 ## Community
 
-The ROCKNIX community utilizes Discord for discussion, if you would like to join us please use this link: &nbsp;[:simple-discord: Discord](https://discord.gg/seTxckZjJy)
+Join the ROCKNIX community on Discord to chat with other users, share tips, and contribute ideas: [:simple-discord: Join our Discord](https://discord.gg/seTxckZjJy)
 
 ## Licenses
 
