@@ -8,7 +8,7 @@
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/ROCKNIX/distribution?labelColor=111111&color=FF5555&label=Commits&style=flat#only-light)](https://github.com/ROCKNIX/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/ROCKNIX/distribution?labelColor=111111&color=FF5555&label=Pull&nbsp;Requests&style=flat#only-light)](https://github.com/ROCKNIX/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=111111&color=FF5555&label=Community&style=flat#only-light)](https://discord.gg/seTxckZjJy)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/releases/latest) [![Activity](https://img.shields.io/github/commit-activity/m/ROCKNIX/distribution?labelColor=dddddd&color=FF5555&label=Commits&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/commits) [![Pull Requests](https://img.shields.io/github/issues-pr-closed/ROCKNIX/distribution?labelColor=dddddd&color=FF5555&label=Pull&nbsp;Requests&style=flat#only-dark)](https://github.com/ROCKNIX/distribution/pulls) [![Community](https://img.shields.io/discord/948029830325235753?labelColor=dddddd&color=FF5555&label=Community&style=flat#only-dark)](https://discord.gg/seTxckZjJy)
 
-Just Enough Linux Operating System (ROCKNIX) is an immutable Linux distribution for handheld gaming devices focused on retro gaming emulation.  It is developed by a small community of enthusiasts and our goal is to produce an operating system that has the features and capabilities we need and to have fun as we develop it.
+ROCKNIX is an immutable Linux distribution for handheld gaming devices focused on retro gaming emulation.  It is developed by a small community of enthusiasts and our goal is to produce an operating system that has the features and capabilities we need and to have fun as we develop it.
 
 ## Features
 
@@ -60,9 +60,11 @@ Under the following terms:
 
 ### ROCKNIX Software
 
-Copyright 2024 ROCKNIX [(https://github.com/ROCKNIX)](https://github.com/ROCKNIX)
+Copyright © 2024-present ROCKNIX [(https://github.com/ROCKNIX)](https://github.com/ROCKNIX)
 
-Original software and scripts developed by the ROCKNIX team are licensed under the terms of the [GNU GPL Version 2](https://choosealicense.com/licenses/gpl-2.0/).  The full license can be found in this project's licenses folder.
+The Buildroot configuration, supporting build scripts, and embedded system utilities developed by the ROCKNIX team are licensed under the terms of the [GNU GPL Version 2](https://choosealicense.com/licenses/gpl-2.0/).  A copy of the full license is available in this project's licenses directory.
+
+All other ROCKNIX software, tools, or components not explicitly included under this notice are not automatically covered by the GPL and may be licensed separately under different terms at the discretion of the ROCKNIX team.
 
 ### Bundled Works
 All other software is provided under each component's respective license.  These licenses can be found in the software sources or in this project's licenses folder.  Modifications to bundled software and scripts by the ROCKNIX team are licensed under the terms of the software being modified.
