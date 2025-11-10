@@ -52,4 +52,4 @@ We provide builds for the following devices:
 * Unbranded
   * [Game Console R33S](unbranded/game-console-r33s)
   * [Game Console R35S R36S](unbranded/game-console-r35s-r36s)
-  * [Game Console R36Max R36Pro K36](unbranded/game-console-r36max)
+  * [K36 and other EE clones](unbranded/EE-clones)
