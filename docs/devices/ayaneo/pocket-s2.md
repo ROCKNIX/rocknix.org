@@ -27,8 +27,8 @@ search:
 
 - In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
 - Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
-- Copy the file on the SD card `/device_trees/u-boot-odin2.dtb` in the root of the SD card.
-- Rename the file `/u-boot-odin2.dtb` as `/dtb.img`
+- Copy the file on the SD card `/device_trees/u-boot-pocket-s2.dtb` in the root of the SD card.
+- Rename the file `/u-boot-pocket-s2.dtb` as `/dtb.img`
 
 ## Controls
 
