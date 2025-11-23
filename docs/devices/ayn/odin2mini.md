@@ -24,8 +24,11 @@ search:
 
 ## Flashing LinuxLoader ABL
 
-- [You must flash the Linux Loader ABL before you can boot ROCKNIX on the Odin 2.](https://renegade-project.tech/en/ayn-odin2/linuxloader) 
-- [Alternative mirror: Extract the odin2_custom_abl folder to the root of Android internal storage. Then use Odin settings -> Run script as Root to run the backup_and_flash.sh script.](https://github.com/ROCKNIX/packages/raw/refs/heads/main/odin2_custom_abl_20250311.7z)
+- These steps are only required if your device doesn't have a fastboot menu to switch the Boot Mode.
+- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
+- Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
+- Copy the file on the SD card `/device_trees/u-boot-odin2.dtb` in the root of the SD card.
+- Rename the file `/u-boot-odin2.dtb` as `/dtb.img`
 
 ## Controls
 

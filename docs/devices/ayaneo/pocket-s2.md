@@ -3,15 +3,15 @@ search:
   exclude: true
 ---
 
-# Ayn Odin 2
+# AYANEO Pocket S2 (SM8650)
 
-![](../../_inc/images/devices/ayn-odin-2.png){ .off-glb }
+![](../../_inc/images/devices/ayaneo-pocket-s2.png){ .off-glb }
 
 ## Overview
 
 | Device                        | CPU / Architecture      | Kernel         | GL driver | Vulkan driver | Interface                |
 | ----------------------------- | ----------------------- | -------------- | --------- | ------------- | ------------------------ |
-| Ayn Odin 2 (Base / Pro / Max) | Qualcomm 8gen2 (SM8550) | Mainline Linux | Freedreno | Turnip        | Sway + Emulation Station |
+| AYANEO Pocket ACE | Qualcomm G3 Gen3 (SM8650) | Mainline Linux | Freedreno | Turnip        | Sway + Emulation Station |
 
 ## Features
 
@@ -22,17 +22,6 @@ search:
 | :material-fan: Fan                                                                                      | Can be set globally, per system or per game.                                                            |
 | :material-lightbulb-on: Joystick LEDS                                                                   | Supports selecting from a set of colors, battery level status, <br> or turning the joystick LEDS off.   |
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
-
-## Ayn Boot Selection for Linux
-
-**Requires Ayn Odin 2 Firmware `v1.0.0.355` or newer** which adds support for Linux boot selection.
-
-1. Power off the Odin 2 and insert your SD Card with ROCKNIX flashed on it
-2. While holding down the VOL- button, press the power button and hold both buttons until you see the Ayn Log
-3. The device should show the FastBoot Menu
-4. Use the volume button to navigate the menu and change the `BOOT MODE` to `Loader`
-5. Press power key to select `START`
-6. Device will then boot into ROCKNIX off the SD Card
 
 ## Flashing LinuxLoader ABL
 
@@ -63,4 +52,4 @@ search:
 
 ## Additional References
 
-- [Platform Documentation (SM8550)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8550)
+- [Platform Documentation (SM8650)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8650)

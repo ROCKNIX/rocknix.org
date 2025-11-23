@@ -229,10 +229,16 @@ nav:
         - RG CubeXX: devices/anbernic/rg-cubexx.md
         - RG34XX: devices/anbernic/rg34xx.md
         - RG34XX SP: devices/anbernic/rg34xx-sp.md
+      - AYANEO:
+        - AYANEO Pocket ACE: devices/ayaneo/pocket-ace.md
+        - AYANEO Pocket DMG: devices/ayaneo/pocket-dmg.md
+        - AYANEO Pocket EVO: devices/ayaneo/pocket-evo.md
+        - AYANEO Pocket S2: devices/ayaneo/pocket-s2.md
       - Ayn:
         - Ayn Odin 2: devices/ayn/odin2.md
         - Ayn Odin 2 Mini: devices/ayn/odin2mini.md
         - Ayn Odin 2 Portal: devices/ayn/odin2portal.md
+        - Ayn Thor (SM8550): devices/ayn/thor-sm8550.md
       - GameForce:
         - GameForce Ace: devices/gameforce/gameforce-ace.md
       - Hardkernel:
