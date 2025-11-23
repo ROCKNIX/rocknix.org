@@ -19,13 +19,12 @@ search:
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | :material-wifi: Wifi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                |
 | :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                |
-| :material-fan: Fan                                                                                      | Can be set globally, per system or per game.                                                            |
+| :material-fan: Fan | Managed by the kernel. |
 | :material-lightbulb-on: Joystick LEDS                                                                   | Supports selecting from a set of colors, battery level status, <br> or turning the joystick LEDS off.   |
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 
 ## Flashing LinuxLoader ABL
 
-- These steps are only required if your device doesn't have a fastboot menu to switch the Boot Mode.
 - In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
 - Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
 - Copy the file on the SD card `/device_trees/u-boot-pocket-evo.dtb` in the root of the SD card.

@@ -19,7 +19,7 @@ search:
 | -- | -- |
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
-| :material-fan: Fan | Can be set globally, per system or per game. |
+| :material-fan: Fan | Managed by the kernel. |
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
 
 ## Ayn Boot Selection for Linux
