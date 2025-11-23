@@ -11,7 +11,7 @@ search:
 
 | Device                        | CPU / Architecture      | Kernel         | GL driver | Vulkan driver | Interface                |
 | ----------------------------- | ----------------------- | -------------- | --------- | ------------- | ------------------------ |
-| AYANEO Pocket ACE | Qualcomm G3 Gen3 (SM8650) | Mainline Linux | Freedreno | Turnip        | Sway + Emulation Station |
+| AYANEO Pocket S2 | Qualcomm G3 Gen3 (SM8650) | Mainline Linux | Freedreno | Turnip        | Sway + Emulation Station |
 
 ## Features
 
