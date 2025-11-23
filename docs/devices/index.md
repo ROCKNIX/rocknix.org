@@ -22,8 +22,16 @@ We provide builds for the following devices:
   * [Anbernic RG40XX H](anbernic/rg40xx-h)
   * [Anbernic RG CubeXX](anbernic/rg-cubexx)
   * [Anbernic RG34XX](anbernic/rg34xx)
+* AYANEO
+  * [AYANEO Pocket ACE](ayaneo/pocket-ace)
+  * [AYANEO Pocket DMG](ayaneo/pocket-dmg)
+  * [AYANEO Pocket EVO](ayaneo/pocket-evo)
+  * [AYANEO Pocket S2](ayaneo/pocket-s2)
 * Ayn
   * [Ayn Odin 2](ayn/odin2)
+  * [Ayn Odin 2 Portal](ayn/odin2portal)
+  * [Ayn Odin 2 Mini](ayn/odin2mini)
+  * [Ayn Thor (SM8550)](ayn/thor-sm8550)
 * GameForce
   * [GameForce Ace](gameforce/gameforce-ace) 
 * Hardkernel
