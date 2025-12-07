@@ -102,6 +102,7 @@ nav:
       - VPN: configure/vpn.md
       - Packages: configure/packages.md
       - H700 Installation: configure/h700-installation.md
+      - Fake suspend: configure/fake-suspend.md
     - Systems:
       #- systems/index.md
       - Arcade:
