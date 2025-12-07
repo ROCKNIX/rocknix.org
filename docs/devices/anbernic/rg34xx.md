@@ -21,6 +21,7 @@
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-lightbulb-on: LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) <br> Does not support other effects. |
+| :material-sleep: Suspend | See: [Fake Suspend](../../configure/fake-suspend) |
 
 ## Controls
 

@@ -21,6 +21,7 @@ search:
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-fan: Fan | Managed by the kernel. |
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
+| :material-sleep: Suspend | See: [Fake Suspend](../../configure/fake-suspend) |
 
 ## Ayn Boot Selection for Linux
 
