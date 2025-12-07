@@ -19,6 +19,7 @@
 | -- | -- |
 | :material-harddisk: Storage | ROCKNIX can be run from an SD Card and an second SD card can be used to store games |
 | :material-lightbulb-on: LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) <br> Does not support other effects. |
+| :material-sleep: Suspend | See: [Fake Suspend](../../configure/fake-suspend) |
 
 ## Controls
 
