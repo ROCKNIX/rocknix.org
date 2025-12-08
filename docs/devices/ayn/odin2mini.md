@@ -23,13 +23,15 @@ search:
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
 | :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
-## Flashing LinuxLoader ABL
+## Flashing ROCKNIX ABL
 
 - These steps are only required if your device doesn't have a fastboot menu to switch the Boot Mode.
 - In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
 - Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
-- Copy the file on the SD card `/device_trees/u-boot-odin2.dtb` in the root of the SD card.
-- Rename the file `/u-boot-odin2.dtb` as `/dtb.img`
+- Reboot device holding Vol - key to enter fastboot menu.
+- Use Vol -/+ to change the option to "Switch boot mode"
+- Hit Power Button to validate.
+- Hit Power Button again to start ROCKNIX.
 
 ## Controls
 

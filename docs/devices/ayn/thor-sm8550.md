@@ -24,14 +24,15 @@ search:
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 | :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
-## Ayn Boot Selection for Linux
+## Flashing ROCKNIX ABL
 
-1. Power off the Thor and insert your SD Card with ROCKNIX flashed on it
-2. While holding down the VOL- button, press the power button and hold both buttons until you see the Ayn Log
-3. The device should show the FastBoot Menu
-4. Use the volume button to navigate the menu and change the `BOOT MODE` to `Loader`
-5. Press power key to select `START`
-6. Device will then boot into ROCKNIX off the SD Card
+- These steps are only required if your device doesn't have a fastboot menu to switch the Boot Mode.
+- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
+- Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
+- Reboot device holding Vol - key to enter fastboot menu.
+- Use Vol -/+ to change the option to "Switch boot mode"
+- Hit Power Button to validate.
+- Hit Power Button again to start ROCKNIX.
 
 ## Controls
 
