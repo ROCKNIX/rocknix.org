@@ -13,7 +13,7 @@
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
 | :material-harddisk: Storage | ROCKNIX should be installed directly to the internal eMMC. <br> A microSD Card can be used for game storage. |
-| :material-sleep: Suspend | See: [Fake Suspend](../../configure/fake-suspend) |
+| :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
 ## :material-controller: Controls
 
