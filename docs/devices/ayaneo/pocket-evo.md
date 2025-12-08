@@ -22,6 +22,7 @@ search:
 | :material-fan: Fan | Managed by the kernel. |
 | :material-lightbulb-on: Joystick LEDS                                                                   | Supports selecting from a set of colors, battery level status, <br> or turning the joystick LEDS off.   |
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
+| :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
 ## Flashing LinuxLoader ABL
 

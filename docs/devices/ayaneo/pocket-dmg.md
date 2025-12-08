@@ -21,6 +21,7 @@ search:
 | :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                |
 | :material-fan: Fan | Managed by the kernel. |
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
+| :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
 ## Flashing LinuxLoader ABL
 
