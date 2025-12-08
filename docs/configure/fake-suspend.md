@@ -32,11 +32,11 @@ Behaviour can be configured in the EmulationStation 'System Settings' menu, 'Sus
 
 ### Shutdown Delay
 
-This setting controls how long fake suspend is active (0 - 30 minutes) before a timed shutdown occurs, when *not* in-game. If the delay is set to 0 minutes, shutdown will occur immediately.
+This setting controls how long fake suspend is active (0 - 30 minutes: default 0 minutes) before a timed shutdown occurs, when *not* in-game. If the delay is set to 0 minutes, shutdown will occur immediately.
 
 ### Shutdown delay (in game)
 
-This setting controls how long fake suspend is active (0 - 30 minutes) before a timed shutdown occurs, when in-game. If the delay is set to 0 minutes, shutdown will occur immediately.
+This setting controls how long fake suspend is active (0 - 30 minutes: default 15 minutes) before a timed shutdown occurs, when in-game. If the delay is set to 0 minutes, shutdown will occur immediately.
 
 ### Enable core parking
 
