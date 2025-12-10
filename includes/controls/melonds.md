@@ -1,3 +1,6 @@
+{% if not btn_hotkey_a %}
+{% set btn_hotkey_a = 'SELECT' %}
+{% endif %}
 ### melonDS ([Nintendo DS](../../../systems/nds))
 
 | Button Combo | Action |
