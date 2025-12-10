@@ -39,6 +39,7 @@
 {%include 'controls/openbor.md' %}
 {%include 'controls/vice.md' %}
 {%include 'controls/duckstation.md' %}
+{%include 'controls/melonds.md' %}
 {%include 'controls/extra.md' %}
 
 ## Notes
