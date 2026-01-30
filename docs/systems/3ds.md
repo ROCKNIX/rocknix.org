@@ -4,7 +4,7 @@
 
 | Game Path | Supported Extensions |
 | --- | --- |
-| `roms/3ds` | ++".3dsx"++ ++".app"++ ++".axf"++ ++".cci"++ ++".cxi"++ ++".cia"++ ++".elf"++ ++".z3dsx"++ ++".zcia ++".zcci"++ ++".zcxi"++ |
+| `roms/3ds` | ++".3ds"++ ++".3dsx"++ ++".app"++ ++".axf"++ ++".cci"++ ++".cxi"++ ++".cia"++ ++".elf"++ ++".z3dsx"++ ++".zcia ++".zcci"++ ++".zcxi"++ |
 
 ## Emulator/Core
 
