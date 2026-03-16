@@ -50,6 +50,9 @@ Download the latest `RK3566` version of ROCKNIX from the button below and follow
 
 {%include 'platforms/android-wipe.md' %}
 
+### Brownout Prevention
+Rocknix's default performance governor holds the RK3566 at max frequency under heavy load, which can cause voltage brownouts that crash the device with static from the speakers and a reboot. To fix this, go to System Settings → Tweaks → Undervolt-CPU DTB Overlay and try the undervolt options (L1 through L3, from mildest to most aggressive)
+
 ## Additional References
 
 - [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
