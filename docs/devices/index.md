@@ -26,6 +26,7 @@ We provide builds for the following devices:
   * [AYANEO Pocket ACE](ayaneo/pocket-ace)
   * [AYANEO Pocket DMG](ayaneo/pocket-dmg)
   * [AYANEO Pocket EVO](ayaneo/pocket-evo)
+  * [AYANEO Pocket DS](ayaneo/pocket-ds)
   * [AYANEO Pocket S2](ayaneo/pocket-s2)
 * Ayn
   * [Ayn Odin 2](ayn/odin2)
