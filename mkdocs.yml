@@ -212,6 +212,7 @@ nav:
         - Media Player: systems/mplayer.md
         - Music Player: systems/music.md
         - Ports: systems/ports.md
+        - Steam: systems/steam.md
     - Devices:
       #- devices/index.md
       - Anbernic:
