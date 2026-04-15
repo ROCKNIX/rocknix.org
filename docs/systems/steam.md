@@ -17,7 +17,7 @@ After successfully logging in, a second "Steam storage" location will be created
 Custom Proton versions can also be installed by copying them to `/storage/.steam/root/compatibilitytools.d`
 
 ### Controller Support
-The controller works in games after enabling Steam Input.
+The controller works in games after enabling Steam Input. To enable Steam Input, select the game, click the controller icon (to the right of the 'Play' button), and click "Enable Steam Input".
 
 ### Performance Options
 You can enable host libraries (DRM, Vulkan, GL) in EmulationStation advanced system options to increase performance and reduce input lag. However, this may prevent some games from launching or, in some cases, may fix games that would otherwise fail to start.
