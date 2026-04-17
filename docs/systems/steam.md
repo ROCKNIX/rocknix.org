@@ -7,7 +7,7 @@ Steam needs to be installed first from Tools by selecting "Start Steam". During 
 
 After the installation is complete, Steam will appear in the main EmulationStation menu.
 
-!!! tip "Installing ROCKNIX to internal memory significantly decreases Steam startup time, as well as game installation and launch times. Therefore, using ROCKNIX from internal memory is recommended for the best performance."
+!!! tip "Installing ROCKNIX to external memory significantly decreases Steam startup time, as well as game installation and launch times. Therefore, using ROCKNIX from internal memory is recommended for the best performance."
 
 ## Step 2: Configure Steam in ROCKNIX
 Launch Steam from EmulationStation and sign in with your Steam account.
