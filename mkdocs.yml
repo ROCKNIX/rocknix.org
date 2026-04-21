@@ -251,6 +251,8 @@ nav:
         - Odroid Go Ultra: devices/hardkernel/odroid-go-ultra.md
       - MagicX:
         - XU Mini M: devices/magicx/xu-mini-m.md
+      - Mangmi:
+        - Air X: devices/mangmi/air-x.md
       - Powkiddy:
         - RGB10: devices/powkiddy/rgb10.md
         - RGB10 Max 3 Pro: devices/powkiddy/rgb10-max-3-pro.md
