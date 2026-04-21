@@ -160,6 +160,7 @@ nav:
         - Arduboy: systems/arduboy.md
         - Atari Lynx: systems/atarilynx.md
         - Bandai Wonderswan / Wonderswan Color: systems/wonderswan.md
+        - Game Park GP32: systems/gp32.md
         - Mega Duck: systems/megaduck.md
         - Nintendo Game & Watch: systems/gameandwatch.md
         - Nintendo Gameboy: systems/gb.md
