@@ -11,7 +11,7 @@ search:
 
 | Device | CPU / Architecture | Kernel | GL driver | Vulkan driver | Interface |
 | -- | -- | -- | -- | -- | -- |
-| Retroid Pocket 5 | Qualcomm SD662 (SM6115) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
+| Mangmi Air X | Qualcomm SD662 (SM6115) | Mainline Linux | Freedreno | Turnip | Sway + Emulation Station |
 
 ## Features
 
@@ -20,7 +20,7 @@ search:
 | :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-lightbulb-on: Joystick LEDS | Supports selecting from a set of colors, battery level status, <br>  or turning the joystick LEDS off. |
-| :material-vibrate: Rumble | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
+| :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
 ## Controls
 
