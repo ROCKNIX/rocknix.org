@@ -56,21 +56,21 @@ First download the latest `SM6115` version of ROCKNIX from the button below  and
 
 ### Step 2: Install ROCKNIX Android Bootloader (ABL)
 
-Once you have written the image to an SD card, insert the card and boot into Android.
-
-Navigate to Settings -> Handheld Settings -> Advanced -> Run Script as Root.
-
-Select the `rocknix-abl` folder on the `ROCKNIX` SD card. Select the `backup_abl.sh` script to flash the ROCKNIX ABL. Select the `flash_abl.sh` script to flash the ROCKNIX ABL.
+- Once you have written the image to an SD card, insert the card and boot into Android.
+- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
+- Navigate to Settings -> Handheld Settings -> Advanced -> Run Script as Root.
+- Select the `rocknix_abl` folder on the Internal Storage.
+- Run the `backup_abl.sh` script to backup the ROCKNIX ABL.
+- Run the `flash_abl.sh` script to flash the ROCKNIX ABL.
 
 !!! note "If GammaOS is installed rather than stock Android, run the `backup_abl.sh` and `flash_abl.sh` scripts in an Android Debug Bridge (adb) shell."
 
 ### Step 3: Configure ROCKNIX ABL
 
-Restart your device, holding Vol- as it boots to enter the ROCKNIX ABL. Within the ROCKNIX ABL, use Vol- / Vol+ to navigate between options and Power to select.
-
-Navigate to 'Set device model' and select MQ65 / MQ66 as appropriate.
-
-Navigate to 'Switch boot mode' and switch it to 'Linux'. Navigate to 'Start' to boot into ROCKNIX.
+- Restart your device, holding Vol- as it boots to enter the ROCKNIX ABL. Within the ROCKNIX ABL, use Vol- / Vol+ to navigate between options and Power to select.
+- Navigate to 'Set device model' and select MQ65 / MQ66 as appropriate.
+- Navigate to 'Switch boot mode' and switch it to 'Linux'.
+- Navigate to 'Start' to boot into ROCKNIX.
 
 ## Additional References
 
