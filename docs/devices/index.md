@@ -41,6 +41,8 @@ We provide builds for the following devices:
   * [Odroid Go Ultra](hardkernel/odroid-go-ultra)
 * MagicX 
   * [XU Mini M](magicx/xu-mini-m)
+* Mangmi
+  * [Air X](mangmi/air-x)
 * Powkiddy
   * [RGB10](powkiddy/rgb10)
   * [RGB10 Max 3 Pro](powkiddy/rgb10-max-3-pro)
