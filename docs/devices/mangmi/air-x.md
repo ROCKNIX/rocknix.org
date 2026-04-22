@@ -49,10 +49,10 @@ search:
 
 ### Step 1: Image SD card
 
-First download the latest `SM6115` version of ROCKNIX from the button below  and follow the instructions listed on the [Install](../../../play/install/) page.
+First download the `SM6115` version of ROCKNIX from the [Latest Nightly Build](https://github.com/ROCKNIX/distribution-nightly/releases/latest) and follow the instructions listed on the [Install](../../../play/install/) page.
 
-[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution-nightly/releases/latest)
-[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution-nightly/releases/latest)
+<!-- [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution-nightly/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution-nightly/releases/latest) -->
 
 ### Step 2: Install ROCKNIX Android Bootloader (ABL)
 
@@ -60,7 +60,7 @@ First download the latest `SM6115` version of ROCKNIX from the button below  and
 - In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
 - Navigate to Settings -> Handheld Settings -> Advanced -> Run Script as Root.
 - Select the `rocknix_abl` folder on the Internal Storage.
-- Run the `backup_abl.sh` script to backup the ROCKNIX ABL.
+- Run the `backup_abl.sh` script to backup the currently installed ABL.
 - Run the `flash_abl.sh` script to flash the ROCKNIX ABL.
 
 !!! note "If GammaOS is installed rather than stock Android, run the `backup_abl.sh` and `flash_abl.sh` scripts in an Android Debug Bridge (adb) shell."
@@ -74,4 +74,4 @@ First download the latest `SM6115` version of ROCKNIX from the button below  and
 
 ## Additional References
 
-- [Platform Documentation (SM6115)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM6115)
+- [Platform Documentation (SM6115)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/SM6115)
