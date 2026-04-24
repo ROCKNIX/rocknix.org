@@ -1,9 +1,9 @@
-# Steam
+# Steam (x86)
 
 ROCKNIX supports Steam, allowing you to run native Linux games as well as Windows games through Proton.
 
 ## Step 1: Install Steam in ROCKNIX
-Steam needs to be installed first from Tools by selecting "Start Steam". During the first installation, ROCKNIX will download the FEX Arch rootfs and install the Steam runtime and its dependencies.
+Steam needs to be installed first from Tools by selecting "Start Steam (x86)". During the first installation, ROCKNIX will download the FEX Arch rootfs and install the Steam runtime and its dependencies.
 
 After the installation is complete, Steam will appear in the main EmulationStation menu.
 
@@ -43,6 +43,27 @@ DXVK_CONFIG="dxvk.enableAsync = true; dxvk.gplAsyncCache = true; dxvk.enableGrap
 ```
 
 * Counter-Strike 2 requires enabling the DRM, Vulkan, and Wayland client host libraries in EmulationStation advanced system options.
+
+
+# Steam (arm64)
+
+ROCKNIX supports Steam (arm64), allowing you to run native Linux games as well as Windows games using FEX + Proton (x86) and Proton (arm64).
+
+## Install Steam in ROCKNIX
+First, install Steam from the Tools menu by selecting "Start Steam (arm64)".
+
+## Steam (arm64) + Proton (arm64)
+To use Proton 11 (arm64), open Steam and search for Proton 11 ARM64. Download it to the default Steam directory (~/.local/share/Steam/steamapps/common/).
+Currently, Steam does not install this automatically.
+
+## Steam (arm64) + Proton (x86) or linux native (x86)
+To use Proton (x86) or run native Linux (x86) games with Steam (arm64), you need to install the Steam (x86) version from the Tools menu.
+
+## Toogle between steam (x86) and (arm64)
+In the EmulationStation advanced settings menu, there is an option to switch between Steam versions (x86 and arm64).
+Use this setting to easily toggle which version of Steam is launched.
+ 
+
 
 
 
