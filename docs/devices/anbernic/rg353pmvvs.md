@@ -55,7 +55,7 @@ The performance governor holds the RK3566 at max frequency under heavy load, thi
 
 ## Additional References
 
-- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
+- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
 - [Device Quirks (353P/M)](https://github.com/ROCKNIX/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353P)
 - [Device Quirks (353V)](https://github.com/ROCKNIX/distribution/tree/main/packages/hardware/quirks/devices/Anbernic%20RG353V)
 

@@ -34,7 +34,7 @@
 
 ## Emulators
 
-- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
+- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
 
 ## Notes
 

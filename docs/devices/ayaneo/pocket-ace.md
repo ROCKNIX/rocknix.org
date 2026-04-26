@@ -55,4 +55,4 @@ search:
 
 ## Additional References
 
-- [Platform Documentation (SM8550)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8550)
+- [Platform Documentation (SM8550)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/SM8550)

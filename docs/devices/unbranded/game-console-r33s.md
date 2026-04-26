@@ -23,7 +23,7 @@
 
 ## Emulators
 
-- [Platform Documentation (RK3326)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3326)
+- [Platform Documentation (RK3326)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/RK3326)
 
 ## Notes
 

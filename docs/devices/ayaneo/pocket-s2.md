@@ -56,4 +56,4 @@ search:
 
 ## Additional References
 
-- [Platform Documentation (SM8650)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8650)
+- [Platform Documentation (SM8650)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/SM8650)
