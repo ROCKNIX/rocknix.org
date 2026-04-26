@@ -75,7 +75,7 @@ Once the ROCKNIX image has been flashed to the the eMMC, restart the device and 
 
 ## Additional References
 
-- [Platform Documentation (S922X)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/S922X)
+- [Platform Documentation (S922X)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/S922X)
 - [Odroid Go Ultra wiki](https://wiki.odroid.com/odroid_go_ultra/odroid_go_ultra)
 
 ### Community Videos

@@ -51,4 +51,4 @@ Download the latest `H700` version of ROCKNIX from the button below and follow t
 
 ## Additional References
 
-- [Platform Documentation (H700)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/H700)
+- [Platform Documentation (H700)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/H700)

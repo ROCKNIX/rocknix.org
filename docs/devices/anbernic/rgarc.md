@@ -59,4 +59,4 @@ Download the latest `RK3566` version of ROCKNIX from the button below and follow
 
 ## Additional References
 
-- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3566)
+- [Platform Documentation (RK3566)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/RK3566)

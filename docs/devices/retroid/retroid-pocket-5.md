@@ -77,7 +77,7 @@ Additonally, these commands can be placed into a script and ran from the file ma
 
 ## Additional References
 
-- [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
+- [Platform Documentation (SM8250)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/SM8250)
 
 ### Community Videos
 

@@ -37,4 +37,4 @@ search:
 
 ## Additional References
 
-- [Platform Documentation (RK3588)](https://github.com/ROCKNIX/distribution/blob/main/documentation/PER_DEVICE_DOCUMENTATION/RK3588)
+- [Platform Documentation (RK3588)](https://github.com/ROCKNIX/distribution/tree/next/documentation/PER_DEVICE_DOCUMENTATION/RK3588)
