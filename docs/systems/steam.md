@@ -16,8 +16,7 @@ After successfully logging in, a second "Steam storage" location will be created
 
 Custom Proton versions can also be installed by copying them to `/storage/.steam/root/compatibilitytools.d`
 
-!!! tip "To use Proton 11 (arm64), open Steam and search for Proton 11 ARM64. Download it to the default Steam directory (~/.local/share/Steam/steamapps/common/).
-Currently, Steam does not install this automatically."
+!!! tip "To use Proton 11 (arm64), open Steam and search for Proton 11 ARM64. Download it to the default Steam directory (~/.local/share/Steam/steamapps/common/). Currently, Steam does not install this automatically."
 
 ### Controller Support
 The controller works in games after enabling Steam Input. To enable Steam Input, select the game, click the controller icon (to the right of the 'Play' button), and click "Enable Steam Input".
@@ -32,7 +31,7 @@ Any game installed by Steam will also appear in the EmulationStation menu under 
 
 ## Compatibility Notes
 * Games which require RTX may not work.
-* Rocknix Steam Compability DB: [RocknixDB]https://rocknix-steamdb.pages.dev/
+* Rocknix Steam Compability DB: [RocknixDB](https://rocknix-steamdb.pages.dev/)
 * Many useful game-specific compatibility notes and launch tweaks can be found on [ProtonDB](https://www.protondb.com/).
 * For some DirectX 12 games that do not boot, try adding the following to the game's launch arguments:
 
