@@ -33,6 +33,7 @@ We provide builds for the following devices:
   * [Ayn Odin 2 Portal](ayn/odin2portal)
   * [Ayn Odin 2 Mini](ayn/odin2mini)
   * [Ayn Thor (SM8550)](ayn/thor-sm8550)
+  * [Ayn Odin 3](ayn/odin3)
 * GameForce
   * [GameForce Ace](gameforce/gameforce-ace) 
 * Hardkernel
