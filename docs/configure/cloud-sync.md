@@ -122,12 +122,15 @@ The `cloud_sync.conf` file contains essential settings for configuring your back
 
 Additional options:
 
-- **`RCLONEOPTS`**: Options for logging, filters, and verbosity during sync operations.
+- **`RCLONEOPTS`**: Options for logging, filters, and verbosity during sync operations. Do not add `--verbose` or `-v` here — they conflict with `--log-level` and are stripped automatically.
 - **`BACKUPMETHOD`**: "sync" mirrors local files exactly; "copy" updates remote without deleting.
 - **`BACKUPFILE_BACKUP_OPTION`**: Include ("yes") or exclude ("no") system backup files.
-- **`RESTOREMETHOD`**: "copy" preserves existing local files; "sync" overwrites them.
+- **`RESTOREMETHOD`**: "copy" preserves existing local files; "sync" overwrites them. Restores only ever touch synced content (saves, states, screenshots): delete flags such as `--delete-excluded` are ignored on restore, so a "sync" restore can never remove your ROMs, BIOS files, or artwork.
 - **`BACKUPFILE_RESTORE_OPTION`**: Include ("yes") or exclude ("no") system backup files during restore.
-- **`RSYNCRMDIR`**: Automatically remove empty remote directories ("yes" to enable).
+- **`RSYNCRMDIR`**: After a successful backup, automatically remove empty directories left behind on the remote ("yes" to enable).
+- **`LOG_LEVEL`**: rclone log verbosity written to `/var/log/cloud_sync.log` (e.g. `INFO`).
+
+Note: the tools use the **first** remote configured in rclone. If you have configured multiple remotes, only the first one listed by `rclone listremotes` is used.
 
 ### Step 4: Using Cloud Backup and Restore
 
@@ -139,7 +142,8 @@ ROCKNIX provides built-in tools for cloud backup and restore operations:
    - Select `Cloud Restore` to restore data from the cloud, per your `.conf` file settings.
 
 2. **Configuration Files**:
-   - These tools are configurable by editing `/storage/.config/cloud_sync.conf` and `/storage/.config/cloud_sync-rules.txt`. Be careful when modifying the rules. Changes ma have unintended consequences. If you do make chages, you may want to try a dry run first.
+   - These tools are configurable by editing `/storage/.config/cloud_sync.conf` and `/storage/.config/cloud_sync-rules.txt`. Be careful when modifying the rules. Changes may have unintended consequences. If you do make changes, you may want to try a dry run first.
+   - After an OS update your settings are preserved: new options are merged into your existing files, and a backup of the previous version is kept alongside them. If an older update left duplicate entries in `cloud_sync.conf`, run `cloud_sync_cleanup_duplicates.sh` over SSH to clean them up.
 
 #### Step 5: Logs and Troubleshooting
 
