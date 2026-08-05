@@ -98,7 +98,7 @@ You can also transfer files using the scp command line tool, which is part of Op
 - Open the `roms` folder and you will see a list of folders where games and bios files can be placed. *(Please see the systems section of the wiki for details on where each system's files should be placed)*
 - After you have added your games you can get them to display in EmulationStation by pressing ++"START"++ to open the Main Menu, then open `Game Settings` then select `Update Gamelists` under the Tools header.
 
-## Option 2: USB Gaget Modes
+## Option 2: USB Gadget Modes
 
 Many devices can be USB gadgets allowing you to transfer files over USB cable.
 
@@ -224,7 +224,7 @@ ROCKNIX has a built in File Manager and you can use it to access connected USB d
 
 ## Option 5: Linux OS
 
-ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.
+ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into a Linux OS will enable you to browse the directories and add files directly.
 
 ### NFS Storage
 
