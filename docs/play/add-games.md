@@ -224,7 +224,7 @@ ROCKNIX has a built in File Manager and you can use it to access connected USB d
 
 ## Option 5: Linux OS
 
-ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into an linux OS will enable you to browse the directories and add files directly.
+ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into a Linux OS will enable you to browse the directories and add files directly.
 
 ### NFS Storage
 
