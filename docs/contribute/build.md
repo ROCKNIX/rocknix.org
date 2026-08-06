@@ -204,7 +204,7 @@ For development builds, you can use the following env variables to customize the
 |----|----|
 |LOCAL_SSH_KEYS_FILE|Enables using ssh public keys for access without the root password.|
 |LOCAL_WIFI_SSID|The SSID of the network the device should connect to automatically.|
-|LOCAL_WIFI_KEY|The WIFI authentication key for the connection."|
+|LOCAL_WIFI_KEY|Wi-Fi authentication key for the connection."|
 |SCREENSCRAPER_DEV_LOGIN|Login information for screenscraper.fr.|
 |GAMESDB_APIKEY|Login information for thegamesdb.net.|
 |CHEEVOS_DEV_LOGIN|Login information for retroachievements.org.|
@@ -217,7 +217,7 @@ For development builds, you can use the following env variables to customize the
 export LOCAL_SSH_KEYS_FILE=~/.ssh/rocknix/authorized_keys
 ```
 
-#### WiFi SSID and password
+#### Wi-Fi SSID and password
 
 ``` bash
 export LOCAL_WIFI_SSID=MYWIFI

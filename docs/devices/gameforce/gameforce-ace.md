@@ -17,7 +17,7 @@ search:
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :material-wifi: Wi-Fi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 
 ## Controls
 

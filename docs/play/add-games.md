@@ -241,4 +241,4 @@ i.e.  something similar to
 
 ```NFS_PATH=nfs.example.com:/path/containing-a-roms-subdir```
 
-Once created, ensure you are connected to a Network segment that can reach the NFS URI (local Wi-Fi or connected via Tailscale/vpn) and navigate to the 'Tools' collection in ES. Execute the 'Mount NFS' entry. ES should restart and you should now have a merged collection available in ES.
+Once created, ensure you are connected to a Network segment that can reach the NFS URI (local Wi-Fi or connected via Tailscale/VPN) and navigate to the 'Tools' collection in ES. Execute the 'Mount NFS' entry. ES should restart and you should now have a merged collection available in ES.
