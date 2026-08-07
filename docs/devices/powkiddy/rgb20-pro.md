@@ -5,7 +5,7 @@
 ## Overview
 {%set hw_display = '3.2-inch 1024*768' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = '2.4 GHz WiFi + BT (RTL8723DS)' %}
+{%set hw_connectivity = '2.4 GHz Wi-Fi + BT (RTL8723DS)' %}
 {%set hw_ram = '1 GB LPDDR4' %}
 {% include "platforms/rk3566.md" %}
 
@@ -14,7 +14,7 @@
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
 | :material-harddisk: Storage | ROCKNIX can be run from an SD Card and an second SD card can be used to store games |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :material-wifi: Wi-Fi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 
 ## Controls
