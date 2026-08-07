@@ -71,13 +71,11 @@ Once you have cloned the repo, decide whether you want to build the main branch 
 |Branch|Purpose|
 |----|----|
 |next|Stable ROCKNIX sources|
-|dev|Unstable ROCKNIX sources|
 
-To check out our development branch, cd into the project directory and checkout `dev`.
+cd into the project directory.
 
 ``` bash
 cd distribution
-git checkout dev
 ```
 
 ### Filesystem Structure
@@ -169,10 +167,19 @@ Building ROCKNIX is easy.  From the root of your local repository, issue one of 
 
 | Devices | Dependency | Docker Command | Manual Command |
 | ---- | ---- | ---- | ---- |
+|AMD64||`make docker-AMD64`|`make AMD64`|
 |RK3588||`make docker-RK3588`|`make RK3588`|
 |RK3326||`make docker-RK3326`|`make RK3326`|
 |RK3566||`make docker-RK3566`|`make RK3566`|
+|RK3576||`make docker-RK3576`|`make RK3576`|
+|RK3399||`make docker-RK3399`|`make RK3399`|
 |S922X||`make docker-S922X`|`make S922X`|
+|H700||`make docker-H700`|`make H700`|
+|SM6115||`make docker-SM6115`|`make SM6115`|
+|SM8250||`make docker-SM8250`|`make SM8250`|
+|SM8550||`make docker-SM8550`|`make SM8550`|
+|SM8650||`make docker-SM8650`|`make SM8650`|
+|SM8750||`make docker-SM8750`|`make SM8750`| 
 |ALL DEVICES||`make docker-world`|`make world`|
 
 > Devices that list a dependency require you to build the dependency first, since that build will be used as the root of the device you are building.
