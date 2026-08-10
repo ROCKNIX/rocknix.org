@@ -270,22 +270,30 @@ Use this table to determine the values you should use in the above command:
 
 | For Build | PROJECT | DEVICE | ARCH |
 | ---- | ---- | ---- | ---- |
-| RK3588 | Rockchip | RK3588 | aarch64 |
-| RK3326 | Rockchip | RK3326 | aarch64 |
-| RK3566 | Rockchip | RK3566 | aarch64 |
-| RK3566-X55 | Rockchip | RK3566-X55 | aarch64 |
-| S922X | Amlogic | S922X | aarch64 |
+| AMD64 | ROCKNIX | AMD64 | x86_64 |
+| RK3588 | ROCKNIX | RK3588 | aarch64 |
+| RK3326 | ROCKNIX | RK3326 | aarch64 |
+| RK3566 | ROCKNIX | RK3566 | aarch64 | 
+| RK3576 | ROCKNIX | RK3576 | aarch64 | 
+| RK3399 | ROCKNIX | RK3399 | aarch64 | 
+| H700 | ROCKNIX | H700 | aarch64 | 
+| SM6115 | ROCKNIX | SM6115 | aarch64 | 
+| SM8250 | ROCKNIX | SM8250 | aarch64 | 
+| SM8550 | ROCKNIX | SM8550 | aarch64 | 
+| SM8650 | ROCKNIX | SM8650 | aarch64 | 
+| SM8750 | ROCKNIX | SM8750 | aarch64 | 
+| S922X | ROCKNIX | S922X | aarch64 |
 
 As an example; if you were buildling `RK3588` and wanted to clean the `mame-lr` package:
 ``` bash
-PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64 ./scripts/clean mame-lr
+PROJECT=ROCKNIX DEVICE=RK3588 ARCH=aarch64 ./scripts/clean mame-lr
 ```
 
 After cleaning a package you can try to build/install it directly as a quick way to see if the error is resolved.  Just change the script to `install` or `build` depending on what the package requires.
 
 Using our example above (e.g. building for RK3588) mame-lr requires `install` so you can run this command to check it directly
 ``` bash
-PROJECT=Rockchip DEVICE=RK3588 ARCH=aarch64 ./scripts/install mame-lr
+PROJECT=ROCKNIX DEVICE=RK3588 ARCH=aarch64 ./scripts/install mame-lr
 ```
 
 If that completes without error then running the build for your device should proceed.
