@@ -16,18 +16,20 @@ After successfully logging in, a second "Steam storage" location will be created
 
 Custom Proton versions can also be installed by copying them to `/storage/.steam/root/compatibilitytools.d`
 
-!!! tip "To use Proton 11 (arm64), open Steam and search for Proton 11 ARM64. Download it to the default Steam directory (~/.local/share/Steam/steamapps/common/). Currently, Steam does not install this automatically."
-
 ### Controller Support
 The controller works in games after enabling Steam Input. To enable Steam Input, select the game, click the controller icon (to the right of the 'Play' button), and click "Enable Steam Input".
 
-### Performance Options (x86 proton only)
-You can enable host libraries (DRM, Vulkan, GL) in EmulationStation advanced system options to increase performance and reduce input lag. However, this may prevent some games from launching or, in some cases, may fix games that would otherwise fail to start.
+### Override ARM Translations options (x86 protons only)
+You can override ARM Translations options (Vulkan, GL, Multiblock) in the Steam Compatibility tab. First, open Steam settings -> System and enable `Developer Mode`. Once enabled, you’ll be able to access the ARM Translation options in the Compatibility settings.
 
 ## Step 3: Play
 Install or copy your games, then launch them from Steam as usual.
 
 Any game installed by Steam will also appear in the EmulationStation menu under Steam.
+
+## Sign in with Mobile App
+To sign in with the mobile app, first enable Bluetooth on the device by navigating to:
+ES Settings -> Controller & Bluetooth Settings -> Enable Bluetooth
 
 ## Compatibility Notes
 * Games which require RTX may not work.
@@ -51,8 +53,9 @@ DXVK_CONFIG="dxvk.enableAsync = true; dxvk.gplAsyncCache = true; dxvk.enableGrap
 ## Toogle between steam (x86) and (arm64)
 In the EmulationStation advanced settings menu, there is an option to switch between Steam versions (x86 and arm64).
 Use this setting to easily toggle which version of Steam is launched.
- 
 
+## Add non-steam game to steam
+Switch to the Steam (x86) version, then launch Steam and click "Add a Non-Steam Game" in the bottom left corner. Select the game you want to add, then click "Add Selected Programs". The game will now appear in your Steam library.
 
 
 
