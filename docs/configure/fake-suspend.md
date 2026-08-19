@@ -56,7 +56,7 @@ This setting controls whether or not CPU cores 1...n are brought offline during 
 
 ### Enable DPMS
 
-This setting controls whether the display is turned off using window manager DPMS or using simple backlight control. If you encounter instability issues with DPMS, eg hard reboots on resume, disable this setting.
+This setting controls whether the display is turned off using window manager DPMS or using simple backlight control. It can cause instability issues on some platforms, so is disabled by default. However it can be enabled on an opt-in basis if it works fine on your device.
 
 ## Charging
 
