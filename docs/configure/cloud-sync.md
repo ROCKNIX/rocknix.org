@@ -114,7 +114,7 @@ If you set ROCKNIX up before this layout existed, your folder stays where it was
 !!! warning "Amazon S3, Backblaze B2 and other bucket storage"
     Dropbox, Google Drive and OneDrive treat this as an ordinary folder, and the default works as-is.
 
-    S3, B2 and similar services do not have folders at the top level — they have **buckets**, and the first part of this path *is* the bucket name. Bucket names must be lowercase, so the default `/GAMES` is rejected outright, and bucket names are shared across everyone using the provider.
+    S3, B2 and similar services do not have folders at the top level — they have **buckets**, and the first part of this path *is* the bucket name. Bucket names must be lowercase, so `ROCKNIX` is rejected outright, and bucket names are shared across everyone using the provider rather than being private to your account.
 
     Set something unique to you instead, with the folders inside it:
 
