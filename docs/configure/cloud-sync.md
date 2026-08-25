@@ -99,17 +99,27 @@ There are three separate kinds of data, and they are kept apart on purpose:
 
 ### The cloud folder
 
-`Network Settings` → `Rclone Services` → `Cloud Folder` sets where everything is stored on your provider. The default is `/GAMES`.
+`Network Settings` → `Rclone Services` → `Cloud Folder` sets where everything is stored on your provider. New installs use:
+
+```
+/ROCKNIX/Saves      game saves, savestates and screenshots
+/ROCKNIX/Backups    system settings archives
+/ROCKNIX/Content    ROMs and BIOS, one folder per system
+```
+
+Inside `Saves`, the structure mirrors your device — savestates and screenshots keep their own folders, and game saves stay under the system they belong to, so a `.srm` is never ambiguous between two consoles.
+
+If you set ROCKNIX up before this layout existed, your folder stays where it was (`/GAMES`) and nothing moves. You can change it here if you would rather match the new layout, but move the existing files on your provider first, or the device will not find them.
 
 !!! warning "Amazon S3, Backblaze B2 and other bucket storage"
     Dropbox, Google Drive and OneDrive treat this as an ordinary folder, and the default works as-is.
 
     S3, B2 and similar services do not have folders at the top level — they have **buckets**, and the first part of this path *is* the bucket name. Bucket names must be lowercase, so the default `/GAMES` is rejected outright, and bucket names are shared across everyone using the provider.
 
-    Set something unique to you instead, with the folder inside it:
+    Set something unique to you instead, with the folders inside it:
 
     ```
-    /my-rocknix-saves/GAMES
+    /my-rocknix-saves/Saves
     ```
 
     ROCKNIX checks this for you and will refuse a folder your provider cannot use.
