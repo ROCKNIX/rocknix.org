@@ -75,75 +75,61 @@ For any questions and advanced configuration, be sure to check out the full docu
 
 ## Cloud Sync with rclone
 
-This guide provides instructions on configuring and using `rclone` for syncing game saves, states, screenshots, and system backups to the cloud.
+ROCKNIX syncs your saves, and optionally your whole library, to a cloud provider using [rclone](https://rclone.org). Everything is set up from the device with a controller — you no longer need SSH or a computer to configure it.
 
-### Step 1: Enable Network and SSH Access
+There are three separate kinds of data, and they are kept apart on purpose:
 
-Before configuring `rclone`, ensure your device is connected to the network and SSH access is enabled:
+| Data | What it covers | Where |
+|---|---|---|
+| **Game saves** | in-game saves, savestates, screenshots | `Game Settings` → `Cloud Saves` |
+| **Content** | ROMs and BIOS files | `Game Settings` → `Cloud Tools` |
+| **System settings** | your configuration, as a backup archive | `Network Settings` → `Rclone Services` → `Backup/Restore System Data` |
 
-1. **Enable Networking**:
-   - Press `START` on your device to open the Main Menu.
-   - Navigate to `Network Settings`.
-   - Set `Enable Network` to `ON`.
-   - Select your `WIFI SSID` and enter your `WIFI Key`.
-   - Exit the menu to apply settings.
+### Setting up a cloud remote
 
-2. **Enable SSH**:
-   - In `Network Settings`, set `Enable SSH` to `ON`.
-   - Retrieve the `root` password from the `System Settings` menu under `Security`.
+1. Press ++"START"++ → `Network Settings` → `Rclone Services` → `Set Up Cloud Remote`.
+2. Follow the three steps. Each one checks itself before letting you continue, so you cannot get halfway through with something misconfigured:
+      - **Set up SSH** — the wizard sets a device password and enables SSH for you.
+      - **Connect from your computer** — it shows the exact command to run and waits until it sees your connection.
+      - **Create the remote** — it walks you through `rclone config` and then verifies the remote actually works.
+3. When it reports success, the cloud tools become available in the menus above.
 
-3. **Access via SSH**:
-   - Use an SSH client (e.g., PowerShell on Windows, Terminal on macOS/Linux) to connect:
-     ```bash
-     ssh root@<device_ip_address>
-     ```
-   - Enter the `root` password when prompted.
+!!! note "Why a computer is still involved"
+    Signing in to a cloud provider needs a web browser, which the handheld does not have. The wizard keeps that to a single step and verifies the result for you, rather than leaving you to configure files by hand.
 
-### Step 2: Configure rclone
+### The cloud folder
 
-With SSH access established, configure `rclone` to connect to your cloud storage provider:
+`Network Settings` → `Rclone Services` → `Cloud Folder` sets where everything is stored on your provider. The default is `/GAMES`.
 
-1. **Start rclone Configuration**:
-   ```bash
-   rclone config
-   ```
-   - Follow the interactive prompts to set up a new remote.
-   - Refer to the [rclone provider documentation](https://rclone.org/remote_setup/) and [headless configuration guide](https://rclone.org/remote_setup/#configuring-by-copying-the-config-file) for detailed instructions.
+!!! warning "Amazon S3, Backblaze B2 and other bucket storage"
+    Dropbox, Google Drive and OneDrive treat this as an ordinary folder, and the default works as-is.
 
-### Step 3: Understanding `cloud_sync.conf`
+    S3, B2 and similar services do not have folders at the top level — they have **buckets**, and the first part of this path *is* the bucket name. Bucket names must be lowercase, so the default `/GAMES` is rejected outright, and bucket names are shared across everyone using the provider.
 
-The `cloud_sync.conf` file contains essential settings for configuring your backup and restore operations:
+    Set something unique to you instead, with the folder inside it:
 
-- **`BACKUPPATH`**: Local directory containing game saves and screenshots.
-- **`RESTOREPATH`**: Local directory where restored data will be placed.
-- **`SYNCPATH`**: Remote cloud directory for syncing.
-- **`BACKUPFOLDER`**: Local directory for system backup files.
-- **`SYNCPATH_BACKUP`**: Remote directory for system backup files.
+    ```
+    /my-rocknix-saves/GAMES
+    ```
 
-Additional options:
+    ROCKNIX checks this for you and will refuse a folder your provider cannot use.
 
-- **`RCLONEOPTS`**: Options for logging, filters, and verbosity during sync operations.
-- **`BACKUPMETHOD`**: "sync" mirrors local files exactly; "copy" updates remote without deleting.
-- **`BACKUPFILE_BACKUP_OPTION`**: Include ("yes") or exclude ("no") system backup files.
-- **`RESTOREMETHOD`**: "copy" preserves existing local files; "sync" overwrites them.
-- **`BACKUPFILE_RESTORE_OPTION`**: Include ("yes") or exclude ("no") system backup files during restore.
-- **`RSYNCRMDIR`**: Automatically remove empty remote directories ("yes" to enable).
+### Backing up and restoring
 
-### Step 4: Using Cloud Backup and Restore
+- **Game saves** — `Game Settings` → `Cloud Saves` offers sync, upload and download, plus toggles to sync automatically at startup and when you exit a game.
+- **ROMs and BIOS** — `Game Settings` → `Cloud Tools` uploads or restores content a directory at a time. These are large; expect it to take a while.
+- **System settings** — `Network Settings` → `Rclone Services` → `Backup/Restore System Data`.
 
-ROCKNIX provides built-in tools for cloud backup and restore operations:
+!!! info "Passwords are never backed up"
+    Backups deliberately exclude your Wi-Fi key and any account passwords or tokens, so an archive synced to the cloud never carries a credential. After restoring onto a fresh device, ROCKNIX shows a page walking you through re-entering them.
 
-1. **Access Tools**:
-   - Navigate to the `Tools` menu in the user interface.
-   - Select `Cloud Backup` to back up your save games and states (and system backup if enabled).
-   - Select `Cloud Restore` to restore data from the cloud, per your `.conf` file settings.
+### Choosing what gets synced
 
-2. **Configuration Files**:
-   - These tools are configurable by editing `/storage/.config/cloud_sync.conf` and `/storage/.config/cloud_sync-rules.txt`. Be careful when modifying the rules. Changes ma have unintended consequences. If you do make chages, you may want to try a dry run first.
+`/storage/.config/cloud_sync-rules.txt` controls which files are included. It is an **allowlist** — anything not explicitly included is left alone.
 
-#### Step 5: Logs and Troubleshooting
+Rules are matched **first-match-wins**: the first rule matching a file decides, and later rules cannot override an earlier one. Your own rules are kept across updates and placed ahead of the defaults, so they take precedence.
 
-Monitor sync logs for troubleshooting and/or more insight into rclone's activity:
+### Logs and troubleshooting
 
 ```bash
 tail -f /var/log/cloud_sync.log
