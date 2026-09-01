@@ -7,7 +7,7 @@
 
 {%set hw_display = '4-inch 640*480' %}
 {%set hw_emmc = '32GB (D)' %}
-{%set hw_connectivity = '2.4/5 GHz WiFi + BT' %}
+{%set hw_connectivity = '2.4/5 GHz Wi-Fi + BT' %}
 {%set hw_ram = '1 GB (S), 2 GB (D) LPDDR4' %}
 {% include "platforms/rk3566.md" %}
 
@@ -16,7 +16,7 @@
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
 | :material-harddisk: Storage | ROCKNIX can be installed to the eMMC on the D model or run from an SD Card, and an second SD card can be used to store games |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :material-wifi: Wi-Fi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 
 ## Controls

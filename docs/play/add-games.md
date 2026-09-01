@@ -8,14 +8,14 @@ This page will aim to document all possible options and indicate when you might 
 
 ## Storage Modes
 
-ROCKNIX has support for using internal and external storage (microsd) for games.  To make games available in the OS we provide different features based on the capability of the filesystem that you are using.  To support our storage modes ROCKNIX nests games into a directory on your games card called "roms".  All games found in this path will be available in the OS.
+ROCKNIX has support for using internal and external storage (SD card) for games.  To make games available in the OS we provide different features based on the capability of the filesystem that you are using.  To support our storage modes ROCKNIX nests games into a directory on your games card called `roms`.  All games found in this path will be available in the OS.
 
 ### Merged Storage
 
-When using a microsd that is formatted as Ext4 (Linux), ROCKNIX will present users with the ability to merge both the internal and external storage together allowing users to use both devices to store games.  This mode has two preferences, external (default), and internal.
+When using an SD card that is formatted as Ext4 (Linux), ROCKNIX will present users with the ability to merge both the internal and external storage together allowing users to use both devices to store games.  This mode has two preferences, external (default), and internal.
 
 * Preference External
-  * This mode will save anything written to `/storage/roms` to your external microsd (`/storage/games-external/roms`).
+  * This mode will save anything written to `/storage/roms` to your external SD card (`/storage/games-external/roms`).
 * Preference Internal
   * This mode will save anything written to `/storage/roms` to your internal storage (`/storage/games-internal/roms`). 
 
@@ -23,12 +23,12 @@ When using a microsd that is formatted as Ext4 (Linux), ROCKNIX will present use
 
 ### Simple Storage
 
-When Merged Storage is disabled, or when you are using ExFAT or FAT32, ROCKNIX will mount your external card to `/storage/games-external` and make the content of `/storage/games-external/roms` available at /storage/roms.
+When Merged Storage is disabled, or when you are using ExFAT or FAT32, ROCKNIX will mount your external card to `/storage/games-external` and make the content of `/storage/games-external/roms` available at `/storage/roms`.
 
 ### Troubleshooting
 
 * It is possible to create a conflict which will prevent games from being displayed in EmulationStation.  This can usually be resolved by executing `/usr/bin/cleanup_overlay`.  Note: This will reboot your device.
-* If no game folders appear in /storage/roms, make sure you have a `roms` directory on your microsd and reboot.
+* If no game folders appear in `/storage/roms`, make sure you have a `roms` directory on your SD card and reboot.
 
 ## Option 1: Network Transfer
 
@@ -103,7 +103,7 @@ You can also transfer files using the scp command line tool, which is part of Op
 Many devices can be USB gadgets allowing you to transfer files over USB cable.
 
 - RK3326 has only one data USB port, so you need to connect cable to "OTG" port.  
-  Some older Powkiddy devices (ones with wi-fi switch) have built-in USB hub making gadget impossible.
+  Some older Powkiddy devices (ones with Wi-Fi switch) have built-in USB hub making gadget impossible.
 - On other devices use the port you use to charge the console ("DC")
 
 ### Network gadget (former ECM)
@@ -136,7 +136,7 @@ This mode is most useful. You get a network connection between your PC and conso
   </details>
 
 - In this "computer" open "games-roms" share.  
-  Here you can add roms to corresponding folders.
+  Here you can add ROMs to corresponding folders.
   <details> <summary>Screenshot: games-roms share in Windows Explorer</summary>
     <img src="../../_inc/images/add-games/windows_network_games_roms.png" />
   </details>
@@ -158,7 +158,7 @@ This mode seems simple to use, but it has some limitations.
 
 ## Option 3: SD Card
 
-Games can also be added via an SD card.  There are 2 primary methods for this depending on your device.
+Games can also be added directly to the SD card.  There are 2 primary methods for this depending on your device.
 
 ### If your device has 2 SD card slots
 
@@ -168,7 +168,7 @@ Games can also be added via an SD card.  There are 2 primary methods for this de
 - Add your games and place your SD card back into slot 1 and boot up ROCKNIX.
 
 #### If you *do* wish to use a second card in Slot 2 for games
-- With your device turned off; insert a FAT32/ExFAT/ext4/btrfs formated SD card into slot 2 of your device.
+- With your device turned off; insert a FAT32/ExFAT/ext4/Btrfs formatted SD card into slot 2 of your device.
 - Turn your device on.
 - When ROCKNIX completes its boot process, the `roms` directory will automatically be created on the second SD card.
 - Now you can turn off your device, remove your SD card from slot 2 and open it on your PC.
@@ -183,7 +183,7 @@ If your device does not see your SD card (or write the needed folders to it) ple
 
 - With ROCKNIX installed to your internal drive press ++"START"++ to open the Main Menu, then open `System Settings` and turn on `Autodetect Games Card` under the Hardware/Storage header.
 - Turn your device off
-- Insert a FAT32/ExFAT/ext4 formated SD card into your device.
+- Insert a FAT32/ExFAT/ext4 formatted SD card into your device.
 - Turn your device on
 - When ROCKNIX completes its boot process, the `roms` directory will automatically be created.
 - Now you can turn off your device, remove your SD card and open it on your PC.
@@ -220,25 +220,25 @@ ROCKNIX has a built in File Manager and you can use it to access connected USB d
 2. Open the Tools system and select File Manager
 3. Navigate up to `/` and then select `media` - you should see your drive listed after opening media
 4. Open your drive and you should see its contents
-5. From here you can navigate to the file(s) you would like to copy and then navigate back to the `storage/roms` directory and paste your copied files in the approrpiate folder.
+5. From here you can navigate to the file(s) you would like to copy and then navigate back to the `storage/roms` directory and paste your copied files in the appropriate folder.
 
 ## Option 5: Linux OS
 
-ROCKNIX' storage drive is formated as ext4 which can be read natively by linux operating systems.  Plugging in your SD card into a Linux OS will enable you to browse the directories and add files directly.
+ROCKNIX's storage drive is formatted as ext4 which can be read natively by Linux operating systems.  Plugging in your SD card into a Linux OS will enable you to browse the directories and add files directly.
 
 ### NFS Storage
 
-NFS Storage differs to the other approaches in that you do not need to copy any files to the device. It relies on a pre-curated and shared roms location to exist on a Network Attached Storage (NAS) Network File System on the network which the device is connected to. This allows you to quickly load pre-scrapped/existing collections without the need to synchromise or copy anything to an SD card or internal storage.
+NFS Storage differs to the other approaches in that you do not need to copy any files to the device. It relies on a pre-curated and shared ROMs location to exist on a Network Attached Storage (NAS) Network File System on the network which the device is connected to. This allows you to quickly load pre-scrapped/existing collections without the need to synchromise or copy anything to an SD card or internal storage.
 
-Unlike SMB/Samba file shares, NFS was designed specifically for fast IO and to work and present like a local file-system to the OS. Using NFS even on 2.4ghz networks for rom collections often provides a better experience than even the internal SD card can support. NFS servers are relatively trivial to setup and can be installed on Windows through the features function.
+Unlike SMB/Samba file shares, NFS was designed specifically for fast IO and to work and present like a local file-system to the OS. Using NFS even on 2.4ghz networks for ROM collections often provides a better experience than even the internal SD card can support. NFS servers are relatively trivial to setup and can be installed on Windows through the features function.
 
 NFS support in rocknix is implemented as a variation on the merged storage approach. The NFS URI(Universal Resource Identifier) is mounted to /storage/games-external and the local storage is mounted in an overlay as the Upper location. Meaning saves / writes to are kept local to the device. 
 
 To Use NFS create a file in /storage/ called '.nfs-mount' with a single entry of the format:
 ```NFS_PATH=<valid NFS uri>```
 
-i.e  something similar to 
+i.e.  something similar to 
 
 ```NFS_PATH=nfs.example.com:/path/containing-a-roms-subdir```
 
-Once created, ensure you are connected to a Network segment that can reach the NFS URI (local wifi or connected via tailscale/vpn) and navigate to the 'Tools' collection in ES. Execute the 'Mount NFS' entry. ES should restart and you should now have a merged collection available in ES.
+Once created, ensure you are connected to a Network segment that can reach the NFS URI (local Wi-Fi or connected via Tailscale/VPN) and navigate to the 'Tools' collection in ES. Execute the 'Mount NFS' entry. ES should restart and you should now have a merged collection available in ES.
