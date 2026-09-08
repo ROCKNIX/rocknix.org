@@ -43,6 +43,7 @@ search:
 {%include 'controls/xemu.md' %}
 {%include 'controls/duckstation.md' %}
 {%include 'controls/azahar.md' %}
+{%include 'controls/bigpemu.md' %}
 
 ## Dual Screen
 These commands will configure the Dual Screen, you will need to login to your device using SSH to run them.

@@ -41,6 +41,7 @@ search:
 {%include 'controls/aethersx2.md' %}
 {%include 'controls/xemu.md' %}
 {%include 'controls/azahar.md' %}
+{%include 'controls/bigpemu.md' %}
 
 ## Additional References
 

@@ -40,6 +40,7 @@
 {%include 'controls/vice.md' %}
 {%include 'controls/duckstation.md' %}
 {%include 'controls/melonds.md' %}
+{%include 'controls/bigpemu.md' %}
 {%include 'controls/extra.md' %}
 
 ## Notes
