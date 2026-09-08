@@ -52,6 +52,7 @@ search:
 {%include 'controls/xemu.md' %}
 {%include 'controls/azahar.md' %}
 {%include 'controls/gopher64.md' %}
+{%include 'controls/bigpemu.md' %}
 
 ## Additional References
 
