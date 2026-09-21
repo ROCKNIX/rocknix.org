@@ -14,5 +14,5 @@
 | ++"{{ btn_hotkey_a }}"+"Vol -"++ | Brightness Down |
 | ++"{{ btn_hotkey_b }}"+"Vol \+"++ | LED on |
 | ++"{{ btn_hotkey_b }}"+"Vol -"++ | LED off |
-| ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol \+"++ | WIFI enable |
-| ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol -"++ | WIFI disable |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol \+"++ | Enable Wi-Fi |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol -"++ | Disable Wi-Fi |

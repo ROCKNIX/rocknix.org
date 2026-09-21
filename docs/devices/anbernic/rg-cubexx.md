@@ -5,7 +5,7 @@
 ## Overview
 {%set hw_display = '4.0-inch 720*720' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = '2.4/5 GHz WiFi + BT' %}
+{%set hw_connectivity = '2.4/5 GHz Wi-Fi + BT' %}
 {%set hw_ram = '1 GB LPDDR4' %}
 {% include "platforms/h700.md" %}
 
@@ -18,7 +18,7 @@
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
 | :material-harddisk: Storage | ROCKNIX can be run from an SD Card and an second SD card can be used to store games |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings |
+| :material-wifi: Wi-Fi | Can be turned on in Emulation Station under Main Menu > Network Settings |
 | :simple-bluetooth: Bluetooth | Supports bluetooth audio and controllers |
 | :material-lightbulb-on: LED | Supports selecting from a set of colors or turning the power LED off (choice persists through reboots) <br> Does not support other effects. |
 | :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |

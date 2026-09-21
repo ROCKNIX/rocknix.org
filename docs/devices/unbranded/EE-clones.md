@@ -21,7 +21,7 @@ This doesn't yield to a perfect result and sometimes needs extra tweaks, but usu
 
 {%set hw_display = '4.0-inch 720x720, 3.5-inch 640x480 and others' %}
 {%set hw_emmc = '8 GB (often)' %}
-{%set hw_connectivity = 'rk915 2.4G WiFi (sometimes)' %}
+{%set hw_connectivity = 'rk915 2.4G Wi-Fi (sometimes)' %}
 {%set hw_ram = 'usually 1 GB DDR3, sometimes 512M' %}
 
 {% include "platforms/rk3326.md" %}
@@ -47,7 +47,7 @@ This doesn't yield to a perfect result and sometimes needs extra tweaks, but usu
 
 1. Flash `B` image to SD
 2. If your device has a stock firmware on SD, move that card to SD2 (GAME) slot
-3. Insert Rocknix SD to SD1 (OS) slot (or the only slot for some devices with SDIO WiFi)
+3. Insert Rocknix SD to SD1 (OS) slot (or the only slot for some devices with SDIO Wi-Fi)
 4. Power on your device with charger unplugged. Wait till it reboots several times (about 5 minutes)
 5. **Should be working!**
 
