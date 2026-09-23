@@ -45,6 +45,31 @@ search:
 {%include 'controls/azahar.md' %}
 {%include 'controls/bigpemu.md' %}
 
+## Installation
+
+### Step 1: Image SD card
+
+First download the `SM8250` version of ROCKNIX from the [Latest Nightly Build](https://github.com/ROCKNIX/distribution-nightly/releases/latest) and follow the instructions listed on the [Install](../../../play/install/) page.
+
+<!-- [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution-nightly/releases/latest)
+[![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution-nightly/releases/latest) -->
+
+### Step 2: Install ROCKNIX Android Bootloader (ABL)
+
+- Once you have written the image to an SD card, insert the card and boot into Android.
+- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
+- Navigate to Settings -> Handheld Settings -> Advanced -> Run Script as Root.
+- Select the `rocknix_abl` folder on the Internal Storage.
+- Run the `backup_abl.sh` script to backup the currently installed ABL.
+- Run the `flash_abl.sh` script to flash the ROCKNIX ABL.
+
+### Step 3: Configure ROCKNIX ABL
+
+- Restart your device, holding Vol- as it boots to enter the ROCKNIX ABL. Within the ROCKNIX ABL, use Vol- / Vol+ to navigate between options and Power to select.
+- Navigate to 'Set device model' and select MQ65 / MQ66 as appropriate.
+- Navigate to 'Switch boot mode' and switch it to 'Linux'.
+- Navigate to 'Start' to boot into ROCKNIX.
+
 ## Dual Screen
 These commands will configure the Dual Screen, you will need to login to your device using SSH to run them.
 
