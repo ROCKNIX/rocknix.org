@@ -64,7 +64,7 @@ First download the `SM8250` version of ROCKNIX from the [Latest Nightly Build](h
 ### Step 3: Configure ROCKNIX ABL
 
 - Restart your device, holding Vol- as it boots to enter the ROCKNIX ABL. Within the ROCKNIX ABL, use Vol- / Vol+ to navigate between options and Power to select.
-- Navigate to 'Set device model' and select MQ65 / MQ66 as appropriate.
+- Navigate to 'Set device model' and select Retroid Pocket Flip2 / Retroid Pocket Flip2 Visionox as appropriate.
 - Navigate to 'Switch boot mode' and switch it to 'Linux'.
 - Navigate to 'Start' to boot into ROCKNIX.
 
