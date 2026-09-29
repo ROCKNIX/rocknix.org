@@ -75,77 +75,101 @@ For any questions and advanced configuration, be sure to check out the full docu
 
 ## Cloud Sync with rclone
 
-ROCKNIX syncs your saves, and optionally your whole library, to a cloud provider using [rclone](https://rclone.org). Everything is set up from the device with a controller — you no longer need SSH or a computer to configure it.
+ROCKNIX can keep your game saves in a cloud account and bring them back on any of your devices, using [rclone](https://rclone.org) underneath. You set it up on the device itself with the controller. You'll need a Wi-Fi connection and an account with a cloud provider (Dropbox, Google Drive, OneDrive, a WebDAV or S3 service, and others).
 
-There are three separate kinds of data, and they are kept apart on purpose:
+It keeps four kinds of thing apart, and the menus use these words throughout:
 
-| Data | What it covers | Where |
+| What | What it covers | Where |
 |---|---|---|
-| **Game saves** | in-game saves, savestates, screenshots | `Game Settings` → `Cloud Saves` |
-| **Content** | ROMs and BIOS files | `Game Settings` → `Cloud Tools` |
-| **System settings** | your configuration, as a backup archive | `Network Settings` → `Rclone Services` → `Backup/Restore System Data` |
+| **Saves** | game saves, save states, and screenshots | `Game Settings` → `Cloud Settings` |
+| **Settings** | your configuration, as a backup archive: emulator and interface settings, controller mappings, themes, collections, bezels | `Manage Cloud Storage` → `Backup and Restore` |
+| **ROMs and BIOS** | your games and BIOS files | `Manage Cloud Storage` → `Backup and Restore` |
+| **Game content** | what the scraper made: artwork, videos, manuals, and the game lists | `Manage Cloud Storage` → `Backup and Restore` |
 
-### Setting up a cloud remote
+Saves move on their own once you turn that on. Everything else moves when you ask.
 
-1. Press ++"START"++ → `Network Settings` → `Rclone Services` → `Set Up Cloud Remote`.
-2. Follow the three steps. Each one checks itself before letting you continue, so you cannot get halfway through with something misconfigured:
-      - **Set up SSH** — the wizard sets a device password and enables SSH for you.
-      - **Connect from your computer** — it shows the exact command to run and waits until it sees your connection.
-      - **Create the remote** — it walks you through `rclone config` and then verifies the remote actually works.
-3. When it reports success, the cloud tools become available in the menus above.
+### Connecting your cloud storage
 
-!!! note "Why a computer is still involved"
-    Signing in to a cloud provider needs a web browser, which the handheld does not have. The wizard keeps that to a single step and verifies the result for you, rather than leaving you to configure files by hand.
+1. Press ++"START"++ → `Game Settings` → `Cloud Settings` → `Manage Cloud Storage`.
+2. Under `Cloud Storage Setup`, select `Connect or Repair Cloud Storage`.
+3. Pick your provider from the `Recommended` list, or open `More` for the rest. S3-style services ask which one first.
+4. Fill in the form. Every provider asks for a name; the required fields are marked, the optional ones sit under their own heading. Select `Connect` under `Finish` when you're done. ROCKNIX tries the connection right away and only saves it if your provider answers.
+    * Dropbox, Google Drive, and OneDrive sign you in instead of asking for a password. Choose `With the On-Screen Keyboard` to sign in on the device, or `With My Phone` to scan a code and type on your phone instead.
+5. When you see `Cloud Setup Complete`, your cloud storage is ready. The `Connected To` row at the top of `Cloud Storage Setup` names it from then on.
+
+<details> <summary>Screenshot: the provider list</summary>
+  <img src="../../_inc/images/cloud-sync/connect-cloud-storage.png" />
+</details>
+
+!!! tip "If something stops working later, `Check Connection` on the same page says whether your cloud answers, and `Connect or Repair Cloud Storage` signs you in again without losing anything."
 
 ### The cloud folder
 
-`Network Settings` → `Rclone Services` → `Cloud Folder` sets where everything is stored on your provider. New installs use:
+`Cloud Storage Setup` → `Change Cloud Folder` sets where ROCKNIX keeps everything on your provider. A new setup uses `/ROCKNIX`, with `Saves`, `Backups`, and `Content` folders inside it. Inside `Saves`, game saves stay under the system they belong to, and save states and screenshots keep their own folders.
 
-```
-/ROCKNIX/Saves      game saves, savestates and screenshots
-/ROCKNIX/Backups    system settings archives
-/ROCKNIX/Content    ROMs and BIOS, one folder per system
-```
+!!! warning "Amazon S3, Backblaze B2, and other bucket storage"
+    These services have no folders at the top level, only **buckets**, and the first part of the folder path is the bucket's name. Bucket names must be lowercase and are shared across everyone using the service, so `ROCKNIX` is refused. Set something unique to you, with the folders inside it: `/my-rocknix-saves`. ROCKNIX checks the name and won't accept one your provider can't use.
 
-Inside `Saves`, the structure mirrors your device — savestates and screenshots keep their own folders, and game saves stay under the system they belong to, so a `.srm` is never ambiguous between two consoles.
+If you set ROCKNIX up before this layout existed, `Tidy Up Your Cloud Folders` appears on `Cloud Storage Setup` while there is something to move. It shows you what it would move first, and it is the one place that deletes anything in your cloud, so read the preview.
 
-If you set ROCKNIX up before this layout existed, your folder stays where it was (`/GAMES`) and nothing moves. You can change it here if you would rather match the new layout, but move the existing files on your provider first, or the device will not find them.
+### Saves
 
-!!! warning "Amazon S3, Backblaze B2 and other bucket storage"
-    Dropbox, Google Drive and OneDrive treat this as an ordinary folder, and the default works as-is.
+`Game Settings` → `Cloud Settings` has three rows for saves, and each one shows how it last went underneath (`LAST <date> - COMPLETED`, or why it couldn't finish):
 
-    S3, B2 and similar services do not have folders at the top level — they have **buckets**, and the first part of this path *is* the bucket name. Bucket names must be lowercase, so `ROCKNIX` is rejected outright, and bucket names are shared across everyone using the provider rather than being private to your account.
+* `Sync Saves with the Cloud`: the newest copy of each save is kept on both sides. Nothing is deleted.
+* `Back Up Saves to the Cloud`: this device's saves go up.
+* `Restore Saves from the Cloud`: the cloud's saves come down.
 
-    Set something unique to you instead, with the folders inside it:
+<details> <summary>Screenshot: the saves rows under Game Settings</summary>
+  <img src="../../_inc/images/cloud-sync/game-settings-cloud-rows.png" />
+</details>
 
-    ```
-    /my-rocknix-saves/Saves
-    ```
+To have this happen by itself, go to `Manage Cloud Storage` → `Save Management` and turn on `Sync Saves During Startup` and `Sync Saves When Exiting a Game`. A small card at the top of the screen shows the sync running and how it ended. The one after a game takes a few seconds and waits for you; if you're offline it says `SKIPPED - YOU'RE NOT ONLINE` and tries again next time.
 
-    ROCKNIX checks this for you and will refuse a folder your provider cannot use.
+!!! note "Play on one console at a time"
+    Sync assumes you play a game on one device, then pick it up on another, not both at once. If two devices have both changed the same save since they last agreed, ROCKNIX keeps the copy it is unsure about instead of throwing either away.
 
-### Backing up and restoring
+### Backing up and restoring the rest
 
-- **Game saves** — `Game Settings` → `Cloud Saves` offers sync, upload and download, plus toggles to sync automatically at startup and when you exit a game.
-- **ROMs and BIOS** — `Game Settings` → `Cloud Tools` uploads or restores content a directory at a time. These are large; expect it to take a while.
-- **System settings** — `Network Settings` → `Rclone Services` → `Backup/Restore System Data`.
+`Manage Cloud Storage` → `Backup and Restore`:
+
+<details> <summary>Screenshot: Manage Cloud Storage</summary>
+  <img src="../../_inc/images/cloud-sync/cloud-hub.png" />
+</details>
+
+1. Select `Back Up to the Cloud` or `Restore from the Cloud`.
+2. Tick what should move: `Saves`, `ROMs and BIOS`, `Game Content`, `Settings`. With `ROMs and BIOS` ticked, a page listing your systems comes next, with how much each would move, so you can pick a few.
+3. Select `Back Up` (or `Restore`). With `ROMs and BIOS` ticked the button reads `Continue` instead, and the systems page comes first. The transfer then runs on its own page, with the file it's on and the time elapsed, and stays there when it's done so you can read how it went. `Cancel` is the way out while it runs; a cancelled transfer leaves what already arrived in place, and running it again picks up where it stopped.
+
+<details> <summary>Screenshot: choosing what to back up</summary>
+  <img src="../../_inc/images/cloud-sync/back-up-to-the-cloud.png" />
+</details>
+
+ROMs are large. Expect the first backup to take a while.
+
+`Match This Device to the Cloud` makes the cloud's `ROMs and BIOS` folders mirror this device, deleting from the cloud what the device no longer has. It shows you exactly what it would delete before it does, and it is the only action in these menus that deletes anything.
 
 !!! info "Passwords are never backed up"
-    Backups deliberately exclude your Wi-Fi key and any account passwords or tokens, so an archive synced to the cloud never carries a credential. After restoring onto a fresh device, ROCKNIX shows a page walking you through re-entering them.
+    A settings backup leaves out your Wi-Fi password, your device password, and any account sign-ins, so an archive in your cloud never carries a credential. After you restore settings onto a device, `Finish Restore Process` appears under `Cloud Storage Setup` and walks you through re-entering them, Wi-Fi first.
 
-### Choosing what gets synced
+### Backing up settings to the device itself
 
-`/storage/.config/cloud_sync-rules.txt` controls which files are included. It is an **allowlist** — anything not explicitly included is left alone.
+You don't need cloud storage for a settings backup. `System Settings` → `System Management and Reset` → `Data Management` has `Back Up Settings to This Device`, which writes the same archive to `/storage/roms/backup/`, and `Restore Settings from This Device`, which puts the newest one back and restarts. Copy the file somewhere safe afterwards; it's the same archive a cloud backup uploads, so one made here restores on any ROCKNIX device.
 
-Rules are matched **first-match-wins**: the first rule matching a file decides, and later rules cannot override an earlier one. Your own rules are kept across updates and placed ahead of the defaults, so they take precedence.
+### Things to keep in mind
 
-### Logs and troubleshooting
+* A game save that changed but stayed the same size still reaches the cloud, on every kind of provider. Plain WebDAV servers keep neither file times nor checksums, so ROCKNIX compares the save's time on the device with its upload time there; a save written under a wrong clock waits for its next write.
+* Saves you delete on the device are not deleted from the cloud, and the other way round. Only `Match This Device to the Cloud` deletes, and only under `ROMs and BIOS`.
+* Everything ROCKNIX writes to your cloud stays under the cloud folder. It never touches anything else in your account.
 
-```bash
-tail -f /var/log/cloud_sync.log
-```
+### Troubleshooting
 
-If you run into any issues, please share details in the appropriate channel in Discord.
+* `YOU'RE NOT ONLINE`: the device has no connection. Check `Network Settings`, then try again.
+* `A SYNC IS ALREADY RUNNING`: wait for the card to finish, then try again.
+* `COULDN'T REACH YOUR CLOUD. YOU MAY NEED TO SIGN IN AGAIN`: run `Check Connection`; if it doesn't answer, `Connect or Repair Cloud Storage` signs you in again.
+* `YOUR CLOUD FOLDER WASN'T FOUND`: the folder under `Change Cloud Folder` no longer exists on your provider. Restoring saves offers to create it.
+
+If you're comfortable with SSH, the sync writes what it did to `/var/log/cloud_sync.log`. If you run into anything else, share the details in the appropriate channel in Discord.
 
 ## NFS Storage
 

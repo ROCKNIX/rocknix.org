@@ -8,11 +8,39 @@ With networking turned on you do things such as [add games](../../play/add-games
 
 1. While in EmulationStation press ++"START"++ on your controller to open the Main Menu.
 2. Navigate to and select `Network Settings`.
-3. Under the Network Configuration header turn on `Enable Network`.
-4. Then select `WIFI SSID` and choose your network name.
-5. Finally enter your password under `WIFI Key` using the onscreen keyboard.
+3. Under the Settings header turn on `Enable Wi-Fi`.
+4. Select `Wi-Fi Network`. ROCKNIX looks for the networks around you and lists them; pick yours.
+5. Type the password on the onscreen keyboard.
 
-When you exit the network settings menu your network should activiate.
+ROCKNIX connects while you wait, and the `Wi-Fi Network` row names your network from then on. If it can't connect it tells you why, and you can try the password again.
+
+<details> <summary>Screenshot: Network Settings</summary>
+  <img src="../../_inc/images/networking/network-settings.png" />
+</details>
+<details> <summary>Screenshot: the list of Wi-Fi networks</summary>
+  <img src="../../_inc/images/networking/wifi-networks.png" />
+</details>
+
+## Networks you've joined before
+
+ROCKNIX keeps the password of every network you join, so it reconnects on its own next time. In the list, a network you've joined carries a `SAVED` mark and the one you're on reads `CONNECTED`.
+
+- Selecting a saved network asks whether to `Connect` with the saved password or `Forget` it. Forget it when the password has changed, then join it again with the new one.
+- `Manage Saved Networks`, under `Wi-Fi Network`, lists everything ROCKNIX has kept. Select a network there to forget it.
+- A network that hides its name is added with `Input Manually` at the bottom of the list: type the name, then the password.
+
+<details> <summary>Screenshot: a saved network, selected</summary>
+  <img src="../../_inc/images/networking/wifi-saved-network.png" />
+</details>
+<details> <summary>Screenshot: Manage Saved Networks</summary>
+  <img src="../../_inc/images/networking/saved-networks.png" />
+</details>
+<details> <summary>Screenshot: forgetting a network</summary>
+  <img src="../../_inc/images/networking/forget-network.png" />
+</details>
+
+!!! note "Wi-Fi passwords stay on the device"
+    A settings backup to the cloud leaves them out, so after you restore settings onto another device, join your network again there.
 
 ## Additional Notes
 

@@ -16,3 +16,7 @@ Once you have created a ScreenScraper account:
 3. Using the checkboxes, select which resources you want to download when scraping (Preview images are downloaded automatically, and so are the game’s title, release date, developer, etc)
 
 Please see our [Recommended Configurations](../themes/#recommended-configurations) for options that we believe work well with our default theme.
+
+## Scraping with your own ScreenScraper developer access
+
+ScreenScraper asks for a developer ID and password alongside your account, and ROCKNIX carries a shared one. A build without it shows `Developer ID` and `Developer Password` rows under the Scraper's `Accounts` tab, next to your username and password. ScreenScraper issues a developer pair on its forum, and it goes in those two rows. Like your password, the pair is left out of settings backups.
