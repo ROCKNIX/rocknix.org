@@ -76,6 +76,7 @@ nav:
       - Build: contribute/build.md
       - Modify: contribute/modify.md
       - Quirks: contribute/quirks.md
+      - Cloud sync internals: contribute/cloud-sync-internals.md
     - Play:
       - Install: play/install.md
       - Update: play/update.md
