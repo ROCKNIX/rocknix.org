@@ -15,7 +15,7 @@ Some things you can use it for with ROCKNIX:
 ### Setup
 
 #### Setup on ROCKNIX
-* Make sure you are connected to a WiFi network before continuing.
+* Make sure you are connected to a Wi-Fi network before continuing.
 * Go to "Network Settings" and set "Enable Syncthing" to "on". Make a note of your device's IP address, as well as the root password in the System Settings menu.
 * On a computer or mobile device in the same network, open a browser and point it to "http://a.b.c.d:8384" where "a.b.c.d" is the IP address of your ROCKNIX device.
 * When prompted for a user name and password, enter "root" as user and the password you noted earlier.

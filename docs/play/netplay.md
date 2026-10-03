@@ -1,6 +1,6 @@
 # :material-vector-link: Network Play
 
-RetroArch network play for up to 4 players is available across all WIFI enabled devices supported by ROCKNIX.  Before continuing, please make sure that all devices are updated to the same version of the operating system.
+RetroArch network play for up to 4 players is available across all Wi-Fi enabled devices supported by ROCKNIX.  Before continuing, please make sure that all devices are updated to the same version of the operating system.
 
 ## Video Guide
 
@@ -16,12 +16,12 @@ Before netplay is available, it must be enabled on each participating device.
   * Index Games
 
 ## Option 1: LAN based Network Play
-Using this feature is simple.  For LAN based play, connect your devices to your WIFI network.  A minimum of one host and one client are required for play.
+Using this feature is simple.  For LAN based play, connect your devices to your Wi-Fi network.  A minimum of one host and one client are required for play.
 
 ### Local LAN Play (HOST)
 
 * Select Network Settings.
-  * Enable WiFi.
+  * Enable Wi-Fi.
   * Disable Local Play Mode.
   * Select 1 (Host).
 * Choose a game and press Y.
@@ -31,7 +31,7 @@ Using this feature is simple.  For LAN based play, connect your devices to your 
 ### Local LAN Play (CLIENTS)
 
 * Select Network Settings.
-  * Enable WiFi.
+  * Enable Wi-Fi.
   * Disable Local Play Mode.
   * Select 2-4 (Clients).
 * Choose a game and press Y.
@@ -40,12 +40,12 @@ Using this feature is simple.  For LAN based play, connect your devices to your 
 
 ## Option 2: Device to Device Network Play
 
-Device to device connections will automatically generate and connect to a local WIFI network.  As with LAN based play, one host and one client are required for play.  Using the same version of ROCKNIX on each device is REQUIRED or devices will not connect.  Device to device connections are intended for local play only, retroAchievements, scraping, and system updates will not be available in this mode.
+Device to device connections will automatically generate and connect to a local Wi-Fi network.  As with LAN based play, one host and one client are required for play.  Using the same version of ROCKNIX on each device is REQUIRED or devices will not connect.  Device to device connections are intended for local play only, retroAchievements, scraping, and system updates will not be available in this mode.
 
 ### Device to Device Play (HOST)
 
 * Select Network Settings.
-  * Enable WiFi.
+  * Enable Wi-Fi.
   * Enable Local Play Mode.
   * Select 1 (Host).
 * Choose a game and press Y.
@@ -55,7 +55,7 @@ Device to device connections will automatically generate and connect to a local 
 ### Device to Device Play (CLIENTS)
 
 * Select Network Settings.
-  * Enable WiFi.
+  * Enable Wi-Fi.
   * Enable Local Play Mode.
   * Select 2-4 (Clients).
 * Choose a game and press Y.

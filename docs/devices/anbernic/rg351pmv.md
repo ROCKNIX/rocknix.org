@@ -5,7 +5,7 @@
 ## Overview
 {%set hw_display = '3.5-inch 480*320 (P/M), 640*480 (V)' %}
 {%set hw_emmc = 'None' %}
-{%set hw_connectivity = '2.4 GHz WiFi (M/V))' %}
+{%set hw_connectivity = '2.4 GHz Wi-Fi (M/V))' %}
 {%set hw_ram = '1 GB DDR3L' %}
 {% include "platforms/rk3326.md" %}
 
@@ -13,7 +13,7 @@
 
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 | -- | -- |
-| :material-wifi: Wifi | Can be turned on in Emulation Station under Main Menu > Network Settings (RG351M and RG351V Only)|
+| :material-wifi: Wi-Fi | Can be turned on in Emulation Station under Main Menu > Network Settings (RG351M and RG351V Only)|
 
 ## Notes
 

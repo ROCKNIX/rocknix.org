@@ -18,7 +18,7 @@ search:
 | Feature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes                                                                                                   |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | :material-progress-check: Internal installation | See: [installtointernal](../../../play/installtointernal) |
-| :material-wifi: Wifi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                |
+| :material-wifi: Wi-Fi                                                                                    | Can be turned on in Emulation Station under Main Menu > Network Settings                                |
 | :simple-bluetooth: Bluetooth                                                                            | Supports bluetooth audio and controllers                                                                |
 | :material-fan: Fan | Managed by the kernel. |
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
