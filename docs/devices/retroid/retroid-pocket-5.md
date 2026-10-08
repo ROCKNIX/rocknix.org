@@ -102,7 +102,7 @@ swaymsg input "8746:1:RetroidPocket_RDS_Touchscreen" calibration_matrix "0 1 0 -
 However, this configuration is only temporary, as the settings will revert if the device is shutdown or restarted. 
 Additonally, these commands can be placed into a script and ran from the file manager to bypass the need to ssh.
 
-For a setup that persists, the community [RP5 Dual Screen Command Center](https://github.com/Xenocideend/rp5-dual-screen-command-center) keeps both screens configured across reboots and suspend, moves emulator second screens to the built-in display, and adds a touch control app for the bottom screen. It is not part of ROCKNIX; see its guide for installation and known limitations.
+For a setup that persists, the community [ROCKNIX Command Center](https://github.com/Xenocideend/rocknix-command-center) keeps both screens configured across reboots and suspend, moves emulator second screens to the built-in display, and adds a touch control app for the bottom screen. It is not part of ROCKNIX, see its guide for installation and known limitations.
 
 ## Additional References
 
