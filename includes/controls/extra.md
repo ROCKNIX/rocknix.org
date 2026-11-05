@@ -16,3 +16,4 @@
 | ++"{{ btn_hotkey_b }}"+"Vol -"++ | LED off |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol \+"++ | WIFI enable |
 | ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"Vol -"++ | WIFI disable |
+| ++"{{ btn_hotkey_a }}"+"{{ btn_hotkey_b }}"+"{{ btn_south }}"++ | Touchscreen toggle (disable / enable) |
