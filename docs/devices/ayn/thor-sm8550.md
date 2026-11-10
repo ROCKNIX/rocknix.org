@@ -25,15 +25,10 @@ search:
 | :material-vibrate: Rumble                                                                               | Can be turned on or off in Emulation Station under <br> Controller & Bluetooth Settings > Enable Rumble |
 | :material-sleep: Suspend | See: [Fake Suspend](../../../configure/fake-suspend) |
 
-## Flashing ROCKNIX ABL
+## Flashing OpenABL
 
-- These steps are only required if your device doesn't have a fastboot menu to switch the Boot Mode.
-- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
-- Execute as root the scipt `backup_abl.sh`, then `flash_abl.sh`
-- Reboot device holding Vol - key to enter fastboot menu.
-- Use Vol -/+ to change the option to "Switch boot mode"
-- Hit Power Button to validate.
-- Hit Power Button again to start ROCKNIX.
+{%include 'openabl/install.md' %}
+{%include 'openabl/configure.md' %}
 
 ## Controls
 

@@ -32,7 +32,7 @@ If you see the message "This script is not compatible with this device!", ensure
 
 ### Existing installation found
 
-If you see the message "An installation already exists (found partition named 'ROCKNIX / STORAGE'). Exiting.", you will need to remove these existing partitions from internal storage. Booting into the ROCKNIX ABL and selecting the `Uninstall ROCKNIX` option is the easiest way to do this.
+If you see the message "An installation already exists (found partition named 'ROCKNIX / STORAGE'). Exiting.", you will need to remove these existing partitions from internal storage. Booting into OpenABL and selecting the `Uninstall CFW` option is the easiest way to do this.
 
 ### No Android userdata partition found
 

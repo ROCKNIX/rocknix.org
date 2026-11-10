@@ -52,21 +52,15 @@ First download the `SM8250` version of ROCKNIX from the [Latest Nightly Build](h
 <!-- [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=111111&color=FF5555&label=Latest&style=flat#only-light)](https://github.com/ROCKNIX/distribution-nightly/releases/latest)
 [![Latest Version](https://img.shields.io/github/release/ROCKNIX/distribution.svg?labelColor=dddddd&color=FF5555&label=Latest&style=flat#only-dark)](https://github.com/ROCKNIX/distribution-nightly/releases/latest) -->
 
-### Step 2: Install ROCKNIX Android Bootloader (ABL)
+### Step 2: Install OpenABL
 
-- Once you have written the image to an SD card, insert the card and boot into Android.
-- In Android, copy the folder `rocknix_abl` from the SD card to the root of the Internal Storage.
-- Navigate to Settings -> Handheld Settings -> Advanced -> Run Script as Root.
-- Select the `rocknix_abl` folder on the Internal Storage.
-- Run the `backup_abl.sh` script to backup the currently installed ABL.
-- Run the `flash_abl.sh` script to flash the ROCKNIX ABL.
+{%set abl_scripts = 'run_script_as_root' %}
+{%include 'openabl/install.md' %}
 
-### Step 3: Configure ROCKNIX ABL
+### Step 3: Configure OpenABL
 
-- Restart your device, holding Vol- as it boots to enter the ROCKNIX ABL. Within the ROCKNIX ABL, use Vol- / Vol+ to navigate between options and Power to select.
-- Navigate to 'Set device model' and select Retroid Pocket Flip2 / Retroid Pocket Flip2 Visionox as appropriate.
-- Navigate to 'Switch boot mode' and switch it to 'Linux'.
-- Navigate to 'Start' to boot into ROCKNIX.
+{%set abl_device = "Retroid Pocket Flip2 / Retroid Pocket Flip2 Visionox as appropriate" %}
+{%include 'openabl/configure.md' %}
 
 ## Additional References
 
